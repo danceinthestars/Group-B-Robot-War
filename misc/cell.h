@@ -10,14 +10,25 @@ Email: LEE.MING.FUNG@student.mmu.edu.my
 Phone: 018-2021399
 **********|**********|**********/
 
-#include <iostream>
-#include <memory>
-
-#include "misc/battleground.h"
 
 
+#pragma once
 
-int main()
-{
+#include <string>
+
+class Cell {
+
+    private:
+    int x;
+    int y;
     
-}
+    public:
+    Cell(int x, int y);
+
+    int getX() const;
+
+    int getY() const;
+
+    std::string getChar() const;
+
+};

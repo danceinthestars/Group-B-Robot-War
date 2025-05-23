@@ -10,14 +10,27 @@ Email: LEE.MING.FUNG@student.mmu.edu.my
 Phone: 018-2021399
 **********|**********|**********/
 
-#include <iostream>
-#include <memory>
-
-#include "misc/battleground.h"
 
 
+#include "cell.h"
 
-int main()
+
+
+Cell::Cell(int x, int y) : x(x), y(y) 
 {
-    
+}
+
+int Cell::getX() const
+{
+    return x;
+}
+
+int Cell::getY() const
+{
+    return y;
+}
+
+std::string Cell::getChar() const
+{
+    return " ";
 }
