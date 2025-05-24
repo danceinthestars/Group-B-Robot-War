@@ -1,5 +1,5 @@
 /**********|**********|**********|
-Program: main.cpp
+Program: cell.cpp
 Course: OOPDS
 Trimester: 2510
 Name: Lee Ming Fung

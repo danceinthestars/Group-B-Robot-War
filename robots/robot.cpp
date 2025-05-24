@@ -1,5 +1,5 @@
 /**********|**********|**********|
-Program: cell.h
+Program: robot.cpp
 Course: OOPDS
 Trimester: 2510
 Name: Lee Ming Fung
@@ -10,25 +10,13 @@ Email: LEE.MING.FUNG@student.mmu.edu.my
 Phone: 018-2021399
 **********|**********|**********/
 
-
-
-#pragma once
+#include "robot.h"
 
 #include <string>
+#include <memory>
 
-class Cell {
+Robot::Robot(std::string name, std::string type, std::string letter, int xPos, int yPos)
+           : name(name), type(type), letter(letter), xPos(xPos), yPos(yPos),  lives(3), kills(0)
+{
 
-    private:
-    int x;
-    int y;
-    
-    public:
-    Cell(int x, int y);
-
-    int getX() const;
-
-    int getY() const;
-
-    std::string getChar() const;
-
-};
+}

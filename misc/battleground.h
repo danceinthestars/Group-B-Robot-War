@@ -1,5 +1,5 @@
 /**********|**********|**********|
-Program: main.cpp
+Program: battleground.h
 Course: OOPDS
 Trimester: 2510
 Name: Lee Ming Fung
@@ -15,11 +15,10 @@ Phone: 018-2021399
 #include <iostream>
 #include <string>
 #include <vector>
-#include "cell.h"
+#include <memory>
 
-// To-Do List:
-// implement cells 
-// 
+
+#include "cell.h"
 
 
 class Battleground {
@@ -31,12 +30,19 @@ class Battleground {
     int currentStep;
 
 
-    std::vector<std::vector<Cell*>> grid;
+    std::vector<std::vector<std::unique_ptr<Cell>>> grid;
 
 
-    std::string displayBattleground();
+    
 
 
     public:
-    Battleground(int rows, int cols, int maxSteps);
+    Battleground(int rows, int cols, int maxSteps);         // constructor
+    std::string displayBattleground();                      // display the battleground as a string
+
+    int getRows() const;
+    int getCols() const;
+
+    Cell* getCell(int x, int y) const;
+
 };

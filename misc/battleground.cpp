@@ -1,5 +1,5 @@
 /**********|**********|**********|
-Program: main.cpp
+Program: battleground.cpp
 Course: OOPDS
 Trimester: 2510
 Name: Lee Ming Fung
@@ -19,8 +19,17 @@ Phone: 018-2021399
 
 #include "battleground.h"
 
+
+
 Battleground::Battleground(int rows, int cols, int maxSteps) : rows(rows), cols(cols), maxSteps(maxSteps), currentStep(1)
 {
+    grid.resize(rows);
+    for (int i = 0; i < rows; ++i) {
+        grid[i].resize(cols);
+        for (int j = 0; j < cols; ++j) {
+            grid[i][j] = std::make_unique<Cell>(i, j);
+        }
+    }
 }
 
 std::string Battleground::displayBattleground()
@@ -49,4 +58,20 @@ std::string Battleground::displayBattleground()
     // then next commands display output here
 
     return output;
+}
+
+int Battleground::getRows() const
+{
+    return rows;
+}
+
+int Battleground::getCols() const
+{
+    return cols;
+}
+
+Cell* Battleground::getCell(int x, int y) const
+{
+    if (x < 0 || x >= rows || y < 0 || y >= cols) return nullptr;  // check if the coordinates are within bounds
+    return grid[x][y].get();
 }
