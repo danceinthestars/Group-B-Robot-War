@@ -33,4 +33,6 @@ class Robot {
     public:
     Robot(std::string name, std::string type, std::string letter, int xPos, int yPos);
 
+    virtual std::string getChar() const = 0;
+
 };

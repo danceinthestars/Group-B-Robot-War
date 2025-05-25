@@ -32,5 +32,25 @@ int Cell::getY() const
 
 std::string Cell::getChar() const
 {
-    return " ";
+    return robot ? robot->getChar() : " ";
+}
+
+void Cell::placeRobot(Robot* robot)
+{
+    this->robot = robot;
+}
+
+void Cell::removeRobot()            // technically placeRobot can do the same thing,
+{                                   // but it's more readable and intuitive this way
+    robot = nullptr;
+}
+
+bool Cell::hasRobot() const
+{
+    return robot != nullptr;        // returns true if it's not nullptr (meaning there is a robot)
+}
+
+Robot* Cell::getRobot() const
+{
+    return robot;
 }

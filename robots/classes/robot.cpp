@@ -16,7 +16,7 @@ Phone: 018-2021399
 #include <memory>
 
 Robot::Robot(std::string name, std::string type, std::string letter, int xPos, int yPos)
-           : name(name), type(type), letter(letter), xPos(xPos), yPos(yPos),  lives(3), kills(0)
+           : name(name), type(type), letter(letter), xPos(xPos), yPos(yPos), lives(3), kills(0)
 {
 
 }

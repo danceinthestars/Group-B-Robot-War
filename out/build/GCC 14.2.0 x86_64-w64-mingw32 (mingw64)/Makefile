@@ -200,6 +200,30 @@ misc/cell.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/cell.cpp.s
 .PHONY : misc/cell.cpp.s
 
+robots/robot.obj: robots/robot.cpp.obj
+.PHONY : robots/robot.obj
+
+# target to build an object file
+robots/robot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/robot.cpp.obj
+.PHONY : robots/robot.cpp.obj
+
+robots/robot.i: robots/robot.cpp.i
+.PHONY : robots/robot.i
+
+# target to preprocess a source file
+robots/robot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/robot.cpp.i
+.PHONY : robots/robot.cpp.i
+
+robots/robot.s: robots/robot.cpp.s
+.PHONY : robots/robot.s
+
+# target to generate assembly for a file
+robots/robot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/robot.cpp.s
+.PHONY : robots/robot.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... misc/cell.obj
 	@echo ... misc/cell.i
 	@echo ... misc/cell.s
+	@echo ... robots/robot.obj
+	@echo ... robots/robot.i
+	@echo ... robots/robot.s
 .PHONY : help
 
 

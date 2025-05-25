@@ -14,13 +14,17 @@ Phone: 018-2021399
 
 #pragma once
 
-#include <string>
+#include "../robots/classes/robot.h"
+
+#include <memory>
+
 
 class Cell {
 
     private:
     int x;
     int y;
+    Robot* robot = nullptr;
     
     public:
     Cell(int x, int y);
@@ -30,5 +34,13 @@ class Cell {
     int getY() const;
 
     std::string getChar() const;
+
+    void placeRobot(Robot* robot);
+
+    void removeRobot();
+
+    bool hasRobot() const;
+
+    Robot* getRobot() const;
 
 };

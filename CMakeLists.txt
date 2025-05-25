@@ -10,6 +10,7 @@ set(SOURCES
     main.cpp
     misc/battleground.cpp
     misc/cell.cpp
+    robots/robot.cpp
 )
 
 # Add the executable
