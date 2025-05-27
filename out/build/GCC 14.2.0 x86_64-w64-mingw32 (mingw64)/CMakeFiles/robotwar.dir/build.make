@@ -113,26 +113,206 @@ CMakeFiles/robotwar.dir/misc/cell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/misc/cell.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\misc\cell.cpp -o CMakeFiles\robotwar.dir\misc\cell.cpp.s
 
-CMakeFiles/robotwar.dir/robots/robot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
-CMakeFiles/robotwar.dir/robots/robot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/robot.cpp
-CMakeFiles/robotwar.dir/robots/robot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/robotwar.dir/robots/robot.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/robot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\robot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\robot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\robot.cpp
+CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/GenericRobot.cpp
+CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\GenericRobot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\GenericRobot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\GenericRobot.cpp
 
-CMakeFiles/robotwar.dir/robots/robot.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/robot.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\robot.cpp > CMakeFiles\robotwar.dir\robots\robot.cpp.i
+CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\GenericRobot.cpp > CMakeFiles\robotwar.dir\robots\GenericRobot.cpp.i
 
-CMakeFiles/robotwar.dir/robots/robot.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/robot.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\robot.cpp -o CMakeFiles\robotwar.dir\robots\robot.cpp.s
+CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\GenericRobot.cpp -o CMakeFiles\robotwar.dir\robots\GenericRobot.cpp.s
+
+CMakeFiles/robotwar.dir/robots/classes/robot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/classes/robot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/classes/robot.cpp
+CMakeFiles/robotwar.dir/robots/classes/robot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/robotwar.dir/robots/classes/robot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/classes/robot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\classes\robot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\classes\robot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\robot.cpp
+
+CMakeFiles/robotwar.dir/robots/classes/robot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/classes/robot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\robot.cpp > CMakeFiles\robotwar.dir\robots\classes\robot.cpp.i
+
+CMakeFiles/robotwar.dir/robots/classes/robot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/classes/robot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\robot.cpp -o CMakeFiles\robotwar.dir\robots\classes\robot.cpp.s
+
+CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/classes/MovingRobot.cpp
+CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\classes\MovingRobot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\classes\MovingRobot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\MovingRobot.cpp
+
+CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\MovingRobot.cpp > CMakeFiles\robotwar.dir\robots\classes\MovingRobot.cpp.i
+
+CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\MovingRobot.cpp -o CMakeFiles\robotwar.dir\robots\classes\MovingRobot.cpp.s
+
+CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/classes/SeeingRobot.cpp
+CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\classes\SeeingRobot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\classes\SeeingRobot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\SeeingRobot.cpp
+
+CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\SeeingRobot.cpp > CMakeFiles\robotwar.dir\robots\classes\SeeingRobot.cpp.i
+
+CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\SeeingRobot.cpp -o CMakeFiles\robotwar.dir\robots\classes\SeeingRobot.cpp.s
+
+CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/classes/ShootingRobot.cpp
+CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\classes\ShootingRobot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\classes\ShootingRobot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\ShootingRobot.cpp
+
+CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\ShootingRobot.cpp > CMakeFiles\robotwar.dir\robots\classes\ShootingRobot.cpp.i
+
+CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\ShootingRobot.cpp -o CMakeFiles\robotwar.dir\robots\classes\ShootingRobot.cpp.s
+
+CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/classes/ThinkingRobot.cpp
+CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\classes\ThinkingRobot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\classes\ThinkingRobot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\ThinkingRobot.cpp
+
+CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\ThinkingRobot.cpp > CMakeFiles\robotwar.dir\robots\classes\ThinkingRobot.cpp.i
+
+CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\classes\ThinkingRobot.cpp -o CMakeFiles\robotwar.dir\robots\classes\ThinkingRobot.cpp.s
+
+CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/upgrades/moving/HideBot.cpp
+CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\upgrades\moving\HideBot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\upgrades\moving\HideBot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\moving\HideBot.cpp
+
+CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\moving\HideBot.cpp > CMakeFiles\robotwar.dir\robots\upgrades\moving\HideBot.cpp.i
+
+CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\moving\HideBot.cpp -o CMakeFiles\robotwar.dir\robots\upgrades\moving\HideBot.cpp.s
+
+CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/upgrades/moving/JumpBot.cpp
+CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\upgrades\moving\JumpBot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\upgrades\moving\JumpBot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\moving\JumpBot.cpp
+
+CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\moving\JumpBot.cpp > CMakeFiles\robotwar.dir\robots\upgrades\moving\JumpBot.cpp.i
+
+CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\moving\JumpBot.cpp -o CMakeFiles\robotwar.dir\robots\upgrades\moving\JumpBot.cpp.s
+
+CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/upgrades/seeing/ScoutBot.cpp
+CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\upgrades\seeing\ScoutBot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\upgrades\seeing\ScoutBot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\seeing\ScoutBot.cpp
+
+CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\seeing\ScoutBot.cpp > CMakeFiles\robotwar.dir\robots\upgrades\seeing\ScoutBot.cpp.i
+
+CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\seeing\ScoutBot.cpp -o CMakeFiles\robotwar.dir\robots\upgrades\seeing\ScoutBot.cpp.s
+
+CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/upgrades/seeing/TrackBot.cpp
+CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\upgrades\seeing\TrackBot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\upgrades\seeing\TrackBot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\seeing\TrackBot.cpp
+
+CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\seeing\TrackBot.cpp > CMakeFiles\robotwar.dir\robots\upgrades\seeing\TrackBot.cpp.i
+
+CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\seeing\TrackBot.cpp -o CMakeFiles\robotwar.dir\robots\upgrades\seeing\TrackBot.cpp.s
+
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/upgrades/shooting/LongShotBot.cpp
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\upgrades\shooting\LongShotBot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\upgrades\shooting\LongShotBot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\shooting\LongShotBot.cpp
+
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\shooting\LongShotBot.cpp > CMakeFiles\robotwar.dir\robots\upgrades\shooting\LongShotBot.cpp.i
+
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\shooting\LongShotBot.cpp -o CMakeFiles\robotwar.dir\robots\upgrades\shooting\LongShotBot.cpp.s
+
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/upgrades/shooting/SemiAutoBot.cpp
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\upgrades\shooting\SemiAutoBot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\upgrades\shooting\SemiAutoBot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\shooting\SemiAutoBot.cpp
+
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\shooting\SemiAutoBot.cpp > CMakeFiles\robotwar.dir\robots\upgrades\shooting\SemiAutoBot.cpp.i
+
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\shooting\SemiAutoBot.cpp -o CMakeFiles\robotwar.dir\robots\upgrades\shooting\SemiAutoBot.cpp.s
+
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.obj: CMakeFiles/robotwar.dir/flags.make
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/upgrades/shooting/ThirtyShotBot.cpp
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.obj: CMakeFiles/robotwar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.obj -MF CMakeFiles\robotwar.dir\robots\upgrades\shooting\ThirtyShotBot.cpp.obj.d -o CMakeFiles\robotwar.dir\robots\upgrades\shooting\ThirtyShotBot.cpp.obj -c C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\shooting\ThirtyShotBot.cpp
+
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\shooting\ThirtyShotBot.cpp > CMakeFiles\robotwar.dir\robots\upgrades\shooting\ThirtyShotBot.cpp.i
+
+CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots\upgrades\shooting\ThirtyShotBot.cpp -o CMakeFiles\robotwar.dir\robots\upgrades\shooting\ThirtyShotBot.cpp.s
 
 # Object files for target robotwar
 robotwar_OBJECTS = \
 "CMakeFiles/robotwar.dir/main.cpp.obj" \
 "CMakeFiles/robotwar.dir/misc/battleground.cpp.obj" \
 "CMakeFiles/robotwar.dir/misc/cell.cpp.obj" \
-"CMakeFiles/robotwar.dir/robots/robot.cpp.obj"
+"CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.obj" \
+"CMakeFiles/robotwar.dir/robots/classes/robot.cpp.obj" \
+"CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.obj" \
+"CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.obj" \
+"CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.obj" \
+"CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.obj" \
+"CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.obj" \
+"CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.obj" \
+"CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.obj" \
+"CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.obj" \
+"CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.obj" \
+"CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.obj" \
+"CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.obj"
 
 # External object files for target robotwar
 robotwar_EXTERNAL_OBJECTS =
@@ -140,12 +320,24 @@ robotwar_EXTERNAL_OBJECTS =
 bin/robotwar.exe: CMakeFiles/robotwar.dir/main.cpp.obj
 bin/robotwar.exe: CMakeFiles/robotwar.dir/misc/battleground.cpp.obj
 bin/robotwar.exe: CMakeFiles/robotwar.dir/misc/cell.cpp.obj
-bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/robot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/classes/robot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.obj
+bin/robotwar.exe: CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.obj
 bin/robotwar.exe: CMakeFiles/robotwar.dir/build.make
 bin/robotwar.exe: CMakeFiles/robotwar.dir/linkLibs.rsp
 bin/robotwar.exe: CMakeFiles/robotwar.dir/objects1.rsp
 bin/robotwar.exe: CMakeFiles/robotwar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable bin\robotwar.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable bin\robotwar.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\robotwar.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

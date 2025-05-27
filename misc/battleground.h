@@ -40,9 +40,15 @@ class Battleground {
     Battleground(int rows, int cols, int maxSteps);         // constructor
     std::string displayBattleground();                      // display the battleground as a string
 
-    int getRows() const;
-    int getCols() const;
+    int getRows() const;                                    // get total number of rows in the battleground
 
-    Cell* getCell(int x, int y) const;
+    int getCols() const;                                    // get total number of columns in the battleground
+
+    Cell* getCell(int x, int y) const;                      // get coordinates of a cell
+
+    void addRobot(Robot* robot, int x, int y);              // add a robot to the battleground
+
+
+    void runGame();
 
 };

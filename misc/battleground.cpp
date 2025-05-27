@@ -21,7 +21,7 @@ Phone: 018-2021399
 
 
 
-Battleground::Battleground(int rows, int cols, int maxSteps) : rows(rows), cols(cols), maxSteps(maxSteps), currentStep(1)
+Battleground::Battleground(int rows, int cols, int maxSteps) : rows(rows), cols(cols), maxSteps(maxSteps)
 {
     grid.resize(rows);
     for (int i = 0; i < rows; ++i) {
@@ -74,4 +74,37 @@ Cell* Battleground::getCell(int x, int y) const
 {
     if (x < 0 || x >= rows || y < 0 || y >= cols) return nullptr;  // check if the coordinates are within bounds
     return grid[x][y].get();
+}
+
+void Battleground::addRobot(Robot* robot, int x, int y)
+{
+    Cell* cell = getCell(x, y);
+    if (cell && !cell->hasRobot()) 
+    {
+        cell->placeRobot(robot);
+    }
+
+    // set else here if necessary to handle a case where the cell is occupied
+
+}
+
+
+void Battleground::runGame()
+{
+    std::cin.ignore();
+    
+    for (currentStep = 1; currentStep <= maxSteps; ++currentStep)     // add "if there still has more than 1 robot" requirement later
+    {
+
+
+        std::cout << displayBattleground();
+        
+        std::cout << "Press Enter to proceed to the next step..." << std::endl;
+
+        
+        std::cin.get();
+    }
+
+    std::cout << "Game Over!" << std::endl;
+
 }

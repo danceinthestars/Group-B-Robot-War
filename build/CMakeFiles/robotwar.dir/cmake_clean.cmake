@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/robotwar.dir/misc/battleground.cpp.obj.d"
   "CMakeFiles/robotwar.dir/misc/cell.cpp.obj"
   "CMakeFiles/robotwar.dir/misc/cell.cpp.obj.d"
+  "CMakeFiles/robotwar.dir/robots/classes/robot.cpp.obj"
+  "CMakeFiles/robotwar.dir/robots/classes/robot.cpp.obj.d"
   "bin/robotwar.exe"
   "bin/robotwar.exe.manifest"
   "bin/robotwar.pdb"

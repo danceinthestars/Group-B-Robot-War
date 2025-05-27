@@ -14,25 +14,21 @@ Phone: 018-2021399
 #include <memory>
 
 #include "misc/battleground.h"
+#include "robots/GenericRobot.h"
 
 
 
 int main()
 {
-    int rows = 20;
-    int cols = 20;
-    int maxSteps = 5;
+    int rows = 10;
+    int cols = 10;
+    int maxSteps = 2;
 
     Battleground field(rows, cols, maxSteps);
 
-    std::string fieldString = field.displayBattleground();
-    std::cout << fieldString;
 
-    std::cout << "test";
 
-    while(true)
-    {
-        int input;
-        std::cin >> input;   // just so i can see the output
-    }
+    std::cout << "Welcome to Robot War Simulator! Press Enter to start!" << std::endl;
+
+    field.runGame();
 }
