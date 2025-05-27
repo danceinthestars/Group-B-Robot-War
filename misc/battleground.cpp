@@ -48,7 +48,7 @@ std::string Battleground::displayBattleground()
         output += "# ";                                       // display left side border
         for (int i = 0; i < rows; i++)
         {
-            output += grid[i][j]->getChar() + " ";            // display cell
+            output += grid[i][j]->getLetter() + " ";            // display cell
         }
         output += "#\n";                                      // display right side border
     }
@@ -92,16 +92,21 @@ void Battleground::addRobot(Robot* robot, int x, int y)
 void Battleground::runGame()
 {
     std::cin.ignore();
-    
+
     for (currentStep = 1; currentStep <= maxSteps; ++currentStep)     // add "if there still has more than 1 robot" requirement later
     {
 
 
         std::cout << displayBattleground();
-        
-        std::cout << "Press Enter to proceed to the next step..." << std::endl;
 
-        
+        for (const auto& msg : actionLog) 
+        {
+            std::cout << msg << std::endl;
+        }
+
+        actionLog.clear();  
+
+        std::cout << "Press Enter to proceed to the next step..." << std::endl;
         std::cin.get();
     }
 

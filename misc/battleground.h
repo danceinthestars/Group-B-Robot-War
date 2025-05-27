@@ -51,4 +51,5 @@ class Battleground {
 
     void runGame();
 
+    std::vector<std::string> actionLog;                     // log of actions that happen during a round
 };

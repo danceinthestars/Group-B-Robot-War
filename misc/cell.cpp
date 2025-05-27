@@ -30,9 +30,9 @@ int Cell::getY() const
     return y;
 }
 
-std::string Cell::getChar() const
+std::string Cell::getLetter() const
 {
-    return robot ? robot->getChar() : " ";
+    return robot ? robot->getLetter() : " ";
 }
 
 void Cell::placeRobot(Robot* robot)

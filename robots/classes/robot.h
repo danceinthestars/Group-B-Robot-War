@@ -33,6 +33,24 @@ class Robot {
     public:
     Robot(std::string name, std::string type, std::string letter, int xPos, int yPos);
 
-    virtual std::string getChar() const = 0;
+    virtual ~Robot() = default;
+
+    std::string getName() const;
+
+    std::string getType() const;
+
+    std::string getLetter() const;
+
+    int getXPos() const;
+
+    int getYPos() const;
+
+    int getLives() const;
+
+    int getKills() const;
+
+    bool isTracked() const;             // for TrackBot
+
+    virtual void executeAction() = 0;
 
 };

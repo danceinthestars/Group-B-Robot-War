@@ -33,7 +33,7 @@ class Cell {
 
     int getY() const;
 
-    std::string getChar() const;
+    std::string getLetter() const;
 
     void placeRobot(Robot* robot);
 
