@@ -84,12 +84,12 @@ clean: CMakeFiles/robotwar.dir/clean
 CMakeFiles/robotwar.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target robotwar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target robotwar"
 .PHONY : CMakeFiles/robotwar.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/robotwar.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" 17
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/robotwar.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" 0
 .PHONY : CMakeFiles/robotwar.dir/rule
@@ -101,7 +101,7 @@ robotwar: CMakeFiles/robotwar.dir/rule
 # codegen rule for target.
 CMakeFiles/robotwar.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Finished codegen for target robotwar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Haru\Documents\Projects\Group-B-Robot-War\out\build\GCC 14.2.0 x86_64-w64-mingw32 (mingw64)\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Finished codegen for target robotwar"
 .PHONY : CMakeFiles/robotwar.dir/codegen
 
 # clean rule for target.

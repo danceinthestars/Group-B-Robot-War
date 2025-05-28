@@ -10,6 +10,7 @@ set(SOURCES
     main.cpp
     misc/battleground.cpp
     misc/cell.cpp
+    misc/ConfigReader.cpp
     robots/GenericRobot.cpp
     robots/classes/robot.cpp
     robots/classes/MovingRobot.cpp

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robotwar.dir/main.cpp.obj"
   "CMakeFiles/robotwar.dir/main.cpp.obj.d"
+  "CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.obj"
+  "CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.obj.d"
   "CMakeFiles/robotwar.dir/misc/battleground.cpp.obj"
   "CMakeFiles/robotwar.dir/misc/battleground.cpp.obj.d"
   "CMakeFiles/robotwar.dir/misc/cell.cpp.obj"

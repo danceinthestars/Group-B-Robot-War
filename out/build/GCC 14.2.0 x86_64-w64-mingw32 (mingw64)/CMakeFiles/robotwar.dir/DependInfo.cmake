@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/main.cpp" "CMakeFiles/robotwar.dir/main.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/main.cpp.obj.d"
+  "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/misc/ConfigReader.cpp" "CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.obj.d"
   "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/misc/battleground.cpp" "CMakeFiles/robotwar.dir/misc/battleground.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/misc/battleground.cpp.obj.d"
   "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/misc/cell.cpp" "CMakeFiles/robotwar.dir/misc/cell.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/misc/cell.cpp.obj.d"
   "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/GenericRobot.cpp" "CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.obj.d"

@@ -10,6 +10,12 @@ Email: LEE.MING.FUNG@student.mmu.edu.my
 Phone: 018-2021399
 **********|**********|**********/
 
+// from what I can tell, ThinkingRobot is supposed to run all of the
+// thinking algorithms of a robot
+
+
+
+
 #pragma once
 
 #include "robot.h"

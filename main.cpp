@@ -15,20 +15,28 @@ Phone: 018-2021399
 
 #include "misc/battleground.h"
 #include "robots/GenericRobot.h"
+#include "misc/ConfigReader.h"
 
 
 
 int main()
 {
-    int rows = 10;
-    int cols = 10;
-    int maxSteps = 2;
+    ConfigReader config;
+    if (!config.readConfig("config.txt")) {
+        std::cerr << "Failed to read config.txt" << std::endl;
+        return 1;
+    }
 
-    Battleground field(rows, cols, maxSteps);
+    Battleground field(config.rows, config.cols, config.steps);
 
-
+    for (const auto& rc : config.robots) {
+        if (rc.type == "GenericRobot") {
+            Robot* robot = new GenericRobot(rc.name, rc.type, rc.name.substr(0,1), rc.x, rc.y);
+            field.addRobot(robot, rc.x, rc.y);
+        }
+        // Add more robot types here if needed
+    }
 
     std::cout << "Welcome to Robot War Simulator! Press Enter to start!" << std::endl;
-
     field.runGame();
 }

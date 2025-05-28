@@ -21,7 +21,8 @@ Phone: 018-2021399
 #include "cell.h"
 
 
-class Battleground {
+class Battleground 
+{
     private:
 
     int rows;

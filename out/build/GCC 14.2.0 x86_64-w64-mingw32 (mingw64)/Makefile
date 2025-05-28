@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+misc/ConfigReader.obj: misc/ConfigReader.cpp.obj
+.PHONY : misc/ConfigReader.obj
+
+# target to build an object file
+misc/ConfigReader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.obj
+.PHONY : misc/ConfigReader.cpp.obj
+
+misc/ConfigReader.i: misc/ConfigReader.cpp.i
+.PHONY : misc/ConfigReader.i
+
+# target to preprocess a source file
+misc/ConfigReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.i
+.PHONY : misc/ConfigReader.cpp.i
+
+misc/ConfigReader.s: misc/ConfigReader.cpp.s
+.PHONY : misc/ConfigReader.s
+
+# target to generate assembly for a file
+misc/ConfigReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.s
+.PHONY : misc/ConfigReader.cpp.s
+
 misc/battleground.obj: misc/battleground.cpp.obj
 .PHONY : misc/battleground.obj
 
@@ -524,6 +548,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... misc/ConfigReader.obj
+	@echo ... misc/ConfigReader.i
+	@echo ... misc/ConfigReader.s
 	@echo ... misc/battleground.obj
 	@echo ... misc/battleground.i
 	@echo ... misc/battleground.s
