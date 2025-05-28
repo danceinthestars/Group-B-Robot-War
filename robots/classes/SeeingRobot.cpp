@@ -24,7 +24,7 @@ std::vector<std::string>& actionLog) const
     actionLog.push_back(getName() + " (" + getLetter() + ") looked around (" +
                         std::to_string(centerX) + ", " + std::to_string(centerY) + ")");
 
-    for (int i = -1; i <= 1; ++i)       // i and j go from -1 to 1, it should still work; idk the calculations just look nicer this way
+    for (int i = -1; i <= 1; ++i)       // i and j go from -1 to 1, it should still work; i think the calculations just look nicer this way
     {
         for (int j = -1; j <= 1; ++j) 
         {

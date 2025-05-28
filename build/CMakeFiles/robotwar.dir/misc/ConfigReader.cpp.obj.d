@@ -1,5 +1,6 @@
-CMakeFiles/robotwar.dir/main.cpp.obj: \
- C:\Users\Haru\Documents\Projects\Group-B-Robot-War\main.cpp \
+CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.obj: \
+ C:\Users\Haru\Documents\Projects\Group-B-Robot-War\misc\ConfigReader.cpp \
+ C:\Users\Haru\Documents\Projects\Group-B-Robot-War\misc\ConfigReader.h \
  C:/msys64/mingw64/include/c++/14.2.0/iostream \
  C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -140,42 +141,15 @@ CMakeFiles/robotwar.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/istream \
  C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/memory \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/align.h \
- C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
- C:/msys64/mingw64/include/stdint.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/allocated_ptr.h \
- C:/msys64/mingw64/include/c++/14.2.0/ext/aligned_buffer.h \
- C:/msys64/mingw64/include/c++/14.2.0/ext/concurrence.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_base.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
- C:/msys64/mingw64/include/c++/14.2.0/backward/auto_ptr.h \
- C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
- C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h \
- C:\Users\Haru\Documents\Projects\Group-B-Robot-War\misc/battleground.h \
- C:/msys64/mingw64/include/c++/14.2.0/vector \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
- C:\Users\Haru\Documents\Projects\Group-B-Robot-War\misc/cell.h \
- C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/classes/robot.h \
- C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots/GenericRobot.h \
- C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots/classes/MovingRobot.h \
- C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots/classes/SeeingRobot.h \
- C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots/classes/ShootingRobot.h \
- C:\Users\Haru\Documents\Projects\Group-B-Robot-War\robots/classes/ThinkingRobot.h \
- C:\Users\Haru\Documents\Projects\Group-B-Robot-War\misc/ConfigReader.h \
  C:/msys64/mingw64/include/c++/14.2.0/fstream \
  C:/msys64/mingw64/include/c++/14.2.0/bits/codecvt.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/fstream.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/sstream \
- C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc
+ C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/vector \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc

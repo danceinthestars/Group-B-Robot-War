@@ -21,12 +21,15 @@ Phone: 018-2021399
 
 
 
-Battleground::Battleground(int rows, int cols, int maxSteps) : rows(rows), cols(cols), maxSteps(maxSteps)
+Battleground::Battleground(int rows, int cols, int maxSteps) 
+             : rows(rows), cols(cols), maxSteps(maxSteps)
 {
-    grid.resize(rows);
-    for (int i = 0; i < rows; ++i) {
+    grid.resize(rows); 
+    for (int i = 0; i < rows; ++i) 
+    {
         grid[i].resize(cols);
-        for (int j = 0; j < cols; ++j) {
+        for (int j = 0; j < cols; ++j) 
+        {
             grid[i][j] = std::make_unique<Cell>(i, j);
         }
     }
@@ -48,7 +51,7 @@ std::string Battleground::displayBattleground()
         output += "# ";                                       // display left side border
         for (int i = 0; i < rows; i++)
         {
-            output += grid[i][j]->getLetter() + " ";            // display cell
+            output += grid[i][j]->getLetter() + " ";          // display cell
         }
         output += "#\n";                                      // display right side border
     }

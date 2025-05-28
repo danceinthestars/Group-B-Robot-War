@@ -31,7 +31,7 @@ int main()
 
     for (const auto& rc : config.robots) {
         if (rc.type == "GenericRobot") {
-            Robot* robot = new GenericRobot(rc.name, rc.type, rc.name.substr(0,1), rc.x, rc.y);
+            Robot* robot = new GenericRobot(rc.name, rc.type, rc.letter, rc.x, rc.y);
             field.addRobot(robot, rc.x, rc.y);
         }
         // Add more robot types here if needed

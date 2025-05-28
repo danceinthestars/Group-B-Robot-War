@@ -17,7 +17,7 @@ Phone: 018-2021399
 bool ConfigReader::readConfig(const std::string& filename)
 {
     std::ifstream file(filename);
-    
+
     if (!file.is_open()) return false;
 
     std::string line;
@@ -27,7 +27,7 @@ bool ConfigReader::readConfig(const std::string& filename)
         if (line.find("M by N") != std::string::npos) 
         {
             std::istringstream iss(line.substr(line.find(":") + 1));
-            iss >> cols >> rows;
+            iss >> rows >> cols;
         } 
 
         else if (line.find("steps") != std::string::npos) 
@@ -51,5 +51,18 @@ bool ConfigReader::readConfig(const std::string& filename)
         }
     }
 
+    giveLetter();
+
     return true;
 }
+
+void ConfigReader::giveLetter()
+{
+    char current = 'A';
+    for (auto& rc : robots) {
+        rc.letter = std::string(1, current); 
+        current++;
+        if (current > 'Z') current = 'A'; 
+    }
+}
+

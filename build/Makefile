@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+misc/ConfigReader.obj: misc/ConfigReader.cpp.obj
+.PHONY : misc/ConfigReader.obj
+
+# target to build an object file
+misc/ConfigReader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.obj
+.PHONY : misc/ConfigReader.cpp.obj
+
+misc/ConfigReader.i: misc/ConfigReader.cpp.i
+.PHONY : misc/ConfigReader.i
+
+# target to preprocess a source file
+misc/ConfigReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.i
+.PHONY : misc/ConfigReader.cpp.i
+
+misc/ConfigReader.s: misc/ConfigReader.cpp.s
+.PHONY : misc/ConfigReader.s
+
+# target to generate assembly for a file
+misc/ConfigReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.s
+.PHONY : misc/ConfigReader.cpp.s
+
 misc/battleground.obj: misc/battleground.cpp.obj
 .PHONY : misc/battleground.obj
 
@@ -200,6 +224,126 @@ misc/cell.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/cell.cpp.s
 .PHONY : misc/cell.cpp.s
 
+robots/GenericRobot.obj: robots/GenericRobot.cpp.obj
+.PHONY : robots/GenericRobot.obj
+
+# target to build an object file
+robots/GenericRobot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.obj
+.PHONY : robots/GenericRobot.cpp.obj
+
+robots/GenericRobot.i: robots/GenericRobot.cpp.i
+.PHONY : robots/GenericRobot.i
+
+# target to preprocess a source file
+robots/GenericRobot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.i
+.PHONY : robots/GenericRobot.cpp.i
+
+robots/GenericRobot.s: robots/GenericRobot.cpp.s
+.PHONY : robots/GenericRobot.s
+
+# target to generate assembly for a file
+robots/GenericRobot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.s
+.PHONY : robots/GenericRobot.cpp.s
+
+robots/classes/MovingRobot.obj: robots/classes/MovingRobot.cpp.obj
+.PHONY : robots/classes/MovingRobot.obj
+
+# target to build an object file
+robots/classes/MovingRobot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.obj
+.PHONY : robots/classes/MovingRobot.cpp.obj
+
+robots/classes/MovingRobot.i: robots/classes/MovingRobot.cpp.i
+.PHONY : robots/classes/MovingRobot.i
+
+# target to preprocess a source file
+robots/classes/MovingRobot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.i
+.PHONY : robots/classes/MovingRobot.cpp.i
+
+robots/classes/MovingRobot.s: robots/classes/MovingRobot.cpp.s
+.PHONY : robots/classes/MovingRobot.s
+
+# target to generate assembly for a file
+robots/classes/MovingRobot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.s
+.PHONY : robots/classes/MovingRobot.cpp.s
+
+robots/classes/SeeingRobot.obj: robots/classes/SeeingRobot.cpp.obj
+.PHONY : robots/classes/SeeingRobot.obj
+
+# target to build an object file
+robots/classes/SeeingRobot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.obj
+.PHONY : robots/classes/SeeingRobot.cpp.obj
+
+robots/classes/SeeingRobot.i: robots/classes/SeeingRobot.cpp.i
+.PHONY : robots/classes/SeeingRobot.i
+
+# target to preprocess a source file
+robots/classes/SeeingRobot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.i
+.PHONY : robots/classes/SeeingRobot.cpp.i
+
+robots/classes/SeeingRobot.s: robots/classes/SeeingRobot.cpp.s
+.PHONY : robots/classes/SeeingRobot.s
+
+# target to generate assembly for a file
+robots/classes/SeeingRobot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.s
+.PHONY : robots/classes/SeeingRobot.cpp.s
+
+robots/classes/ShootingRobot.obj: robots/classes/ShootingRobot.cpp.obj
+.PHONY : robots/classes/ShootingRobot.obj
+
+# target to build an object file
+robots/classes/ShootingRobot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.obj
+.PHONY : robots/classes/ShootingRobot.cpp.obj
+
+robots/classes/ShootingRobot.i: robots/classes/ShootingRobot.cpp.i
+.PHONY : robots/classes/ShootingRobot.i
+
+# target to preprocess a source file
+robots/classes/ShootingRobot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.i
+.PHONY : robots/classes/ShootingRobot.cpp.i
+
+robots/classes/ShootingRobot.s: robots/classes/ShootingRobot.cpp.s
+.PHONY : robots/classes/ShootingRobot.s
+
+# target to generate assembly for a file
+robots/classes/ShootingRobot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.s
+.PHONY : robots/classes/ShootingRobot.cpp.s
+
+robots/classes/ThinkingRobot.obj: robots/classes/ThinkingRobot.cpp.obj
+.PHONY : robots/classes/ThinkingRobot.obj
+
+# target to build an object file
+robots/classes/ThinkingRobot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.obj
+.PHONY : robots/classes/ThinkingRobot.cpp.obj
+
+robots/classes/ThinkingRobot.i: robots/classes/ThinkingRobot.cpp.i
+.PHONY : robots/classes/ThinkingRobot.i
+
+# target to preprocess a source file
+robots/classes/ThinkingRobot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.i
+.PHONY : robots/classes/ThinkingRobot.cpp.i
+
+robots/classes/ThinkingRobot.s: robots/classes/ThinkingRobot.cpp.s
+.PHONY : robots/classes/ThinkingRobot.s
+
+# target to generate assembly for a file
+robots/classes/ThinkingRobot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.s
+.PHONY : robots/classes/ThinkingRobot.cpp.s
+
 robots/classes/robot.obj: robots/classes/robot.cpp.obj
 .PHONY : robots/classes/robot.obj
 
@@ -224,6 +368,174 @@ robots/classes/robot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/classes/robot.cpp.s
 .PHONY : robots/classes/robot.cpp.s
 
+robots/upgrades/moving/HideBot.obj: robots/upgrades/moving/HideBot.cpp.obj
+.PHONY : robots/upgrades/moving/HideBot.obj
+
+# target to build an object file
+robots/upgrades/moving/HideBot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.obj
+.PHONY : robots/upgrades/moving/HideBot.cpp.obj
+
+robots/upgrades/moving/HideBot.i: robots/upgrades/moving/HideBot.cpp.i
+.PHONY : robots/upgrades/moving/HideBot.i
+
+# target to preprocess a source file
+robots/upgrades/moving/HideBot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.i
+.PHONY : robots/upgrades/moving/HideBot.cpp.i
+
+robots/upgrades/moving/HideBot.s: robots/upgrades/moving/HideBot.cpp.s
+.PHONY : robots/upgrades/moving/HideBot.s
+
+# target to generate assembly for a file
+robots/upgrades/moving/HideBot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/moving/HideBot.cpp.s
+.PHONY : robots/upgrades/moving/HideBot.cpp.s
+
+robots/upgrades/moving/JumpBot.obj: robots/upgrades/moving/JumpBot.cpp.obj
+.PHONY : robots/upgrades/moving/JumpBot.obj
+
+# target to build an object file
+robots/upgrades/moving/JumpBot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.obj
+.PHONY : robots/upgrades/moving/JumpBot.cpp.obj
+
+robots/upgrades/moving/JumpBot.i: robots/upgrades/moving/JumpBot.cpp.i
+.PHONY : robots/upgrades/moving/JumpBot.i
+
+# target to preprocess a source file
+robots/upgrades/moving/JumpBot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.i
+.PHONY : robots/upgrades/moving/JumpBot.cpp.i
+
+robots/upgrades/moving/JumpBot.s: robots/upgrades/moving/JumpBot.cpp.s
+.PHONY : robots/upgrades/moving/JumpBot.s
+
+# target to generate assembly for a file
+robots/upgrades/moving/JumpBot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/moving/JumpBot.cpp.s
+.PHONY : robots/upgrades/moving/JumpBot.cpp.s
+
+robots/upgrades/seeing/ScoutBot.obj: robots/upgrades/seeing/ScoutBot.cpp.obj
+.PHONY : robots/upgrades/seeing/ScoutBot.obj
+
+# target to build an object file
+robots/upgrades/seeing/ScoutBot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.obj
+.PHONY : robots/upgrades/seeing/ScoutBot.cpp.obj
+
+robots/upgrades/seeing/ScoutBot.i: robots/upgrades/seeing/ScoutBot.cpp.i
+.PHONY : robots/upgrades/seeing/ScoutBot.i
+
+# target to preprocess a source file
+robots/upgrades/seeing/ScoutBot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.i
+.PHONY : robots/upgrades/seeing/ScoutBot.cpp.i
+
+robots/upgrades/seeing/ScoutBot.s: robots/upgrades/seeing/ScoutBot.cpp.s
+.PHONY : robots/upgrades/seeing/ScoutBot.s
+
+# target to generate assembly for a file
+robots/upgrades/seeing/ScoutBot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/seeing/ScoutBot.cpp.s
+.PHONY : robots/upgrades/seeing/ScoutBot.cpp.s
+
+robots/upgrades/seeing/TrackBot.obj: robots/upgrades/seeing/TrackBot.cpp.obj
+.PHONY : robots/upgrades/seeing/TrackBot.obj
+
+# target to build an object file
+robots/upgrades/seeing/TrackBot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.obj
+.PHONY : robots/upgrades/seeing/TrackBot.cpp.obj
+
+robots/upgrades/seeing/TrackBot.i: robots/upgrades/seeing/TrackBot.cpp.i
+.PHONY : robots/upgrades/seeing/TrackBot.i
+
+# target to preprocess a source file
+robots/upgrades/seeing/TrackBot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.i
+.PHONY : robots/upgrades/seeing/TrackBot.cpp.i
+
+robots/upgrades/seeing/TrackBot.s: robots/upgrades/seeing/TrackBot.cpp.s
+.PHONY : robots/upgrades/seeing/TrackBot.s
+
+# target to generate assembly for a file
+robots/upgrades/seeing/TrackBot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/seeing/TrackBot.cpp.s
+.PHONY : robots/upgrades/seeing/TrackBot.cpp.s
+
+robots/upgrades/shooting/LongShotBot.obj: robots/upgrades/shooting/LongShotBot.cpp.obj
+.PHONY : robots/upgrades/shooting/LongShotBot.obj
+
+# target to build an object file
+robots/upgrades/shooting/LongShotBot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.obj
+.PHONY : robots/upgrades/shooting/LongShotBot.cpp.obj
+
+robots/upgrades/shooting/LongShotBot.i: robots/upgrades/shooting/LongShotBot.cpp.i
+.PHONY : robots/upgrades/shooting/LongShotBot.i
+
+# target to preprocess a source file
+robots/upgrades/shooting/LongShotBot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.i
+.PHONY : robots/upgrades/shooting/LongShotBot.cpp.i
+
+robots/upgrades/shooting/LongShotBot.s: robots/upgrades/shooting/LongShotBot.cpp.s
+.PHONY : robots/upgrades/shooting/LongShotBot.s
+
+# target to generate assembly for a file
+robots/upgrades/shooting/LongShotBot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/shooting/LongShotBot.cpp.s
+.PHONY : robots/upgrades/shooting/LongShotBot.cpp.s
+
+robots/upgrades/shooting/SemiAutoBot.obj: robots/upgrades/shooting/SemiAutoBot.cpp.obj
+.PHONY : robots/upgrades/shooting/SemiAutoBot.obj
+
+# target to build an object file
+robots/upgrades/shooting/SemiAutoBot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.obj
+.PHONY : robots/upgrades/shooting/SemiAutoBot.cpp.obj
+
+robots/upgrades/shooting/SemiAutoBot.i: robots/upgrades/shooting/SemiAutoBot.cpp.i
+.PHONY : robots/upgrades/shooting/SemiAutoBot.i
+
+# target to preprocess a source file
+robots/upgrades/shooting/SemiAutoBot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.i
+.PHONY : robots/upgrades/shooting/SemiAutoBot.cpp.i
+
+robots/upgrades/shooting/SemiAutoBot.s: robots/upgrades/shooting/SemiAutoBot.cpp.s
+.PHONY : robots/upgrades/shooting/SemiAutoBot.s
+
+# target to generate assembly for a file
+robots/upgrades/shooting/SemiAutoBot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/shooting/SemiAutoBot.cpp.s
+.PHONY : robots/upgrades/shooting/SemiAutoBot.cpp.s
+
+robots/upgrades/shooting/ThirtyShotBot.obj: robots/upgrades/shooting/ThirtyShotBot.cpp.obj
+.PHONY : robots/upgrades/shooting/ThirtyShotBot.obj
+
+# target to build an object file
+robots/upgrades/shooting/ThirtyShotBot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.obj
+.PHONY : robots/upgrades/shooting/ThirtyShotBot.cpp.obj
+
+robots/upgrades/shooting/ThirtyShotBot.i: robots/upgrades/shooting/ThirtyShotBot.cpp.i
+.PHONY : robots/upgrades/shooting/ThirtyShotBot.i
+
+# target to preprocess a source file
+robots/upgrades/shooting/ThirtyShotBot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.i
+.PHONY : robots/upgrades/shooting/ThirtyShotBot.cpp.i
+
+robots/upgrades/shooting/ThirtyShotBot.s: robots/upgrades/shooting/ThirtyShotBot.cpp.s
+.PHONY : robots/upgrades/shooting/ThirtyShotBot.s
+
+# target to generate assembly for a file
+robots/upgrades/shooting/ThirtyShotBot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/robots/upgrades/shooting/ThirtyShotBot.cpp.s
+.PHONY : robots/upgrades/shooting/ThirtyShotBot.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -236,15 +548,54 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... misc/ConfigReader.obj
+	@echo ... misc/ConfigReader.i
+	@echo ... misc/ConfigReader.s
 	@echo ... misc/battleground.obj
 	@echo ... misc/battleground.i
 	@echo ... misc/battleground.s
 	@echo ... misc/cell.obj
 	@echo ... misc/cell.i
 	@echo ... misc/cell.s
+	@echo ... robots/GenericRobot.obj
+	@echo ... robots/GenericRobot.i
+	@echo ... robots/GenericRobot.s
+	@echo ... robots/classes/MovingRobot.obj
+	@echo ... robots/classes/MovingRobot.i
+	@echo ... robots/classes/MovingRobot.s
+	@echo ... robots/classes/SeeingRobot.obj
+	@echo ... robots/classes/SeeingRobot.i
+	@echo ... robots/classes/SeeingRobot.s
+	@echo ... robots/classes/ShootingRobot.obj
+	@echo ... robots/classes/ShootingRobot.i
+	@echo ... robots/classes/ShootingRobot.s
+	@echo ... robots/classes/ThinkingRobot.obj
+	@echo ... robots/classes/ThinkingRobot.i
+	@echo ... robots/classes/ThinkingRobot.s
 	@echo ... robots/classes/robot.obj
 	@echo ... robots/classes/robot.i
 	@echo ... robots/classes/robot.s
+	@echo ... robots/upgrades/moving/HideBot.obj
+	@echo ... robots/upgrades/moving/HideBot.i
+	@echo ... robots/upgrades/moving/HideBot.s
+	@echo ... robots/upgrades/moving/JumpBot.obj
+	@echo ... robots/upgrades/moving/JumpBot.i
+	@echo ... robots/upgrades/moving/JumpBot.s
+	@echo ... robots/upgrades/seeing/ScoutBot.obj
+	@echo ... robots/upgrades/seeing/ScoutBot.i
+	@echo ... robots/upgrades/seeing/ScoutBot.s
+	@echo ... robots/upgrades/seeing/TrackBot.obj
+	@echo ... robots/upgrades/seeing/TrackBot.i
+	@echo ... robots/upgrades/seeing/TrackBot.s
+	@echo ... robots/upgrades/shooting/LongShotBot.obj
+	@echo ... robots/upgrades/shooting/LongShotBot.i
+	@echo ... robots/upgrades/shooting/LongShotBot.s
+	@echo ... robots/upgrades/shooting/SemiAutoBot.obj
+	@echo ... robots/upgrades/shooting/SemiAutoBot.i
+	@echo ... robots/upgrades/shooting/SemiAutoBot.s
+	@echo ... robots/upgrades/shooting/ThirtyShotBot.obj
+	@echo ... robots/upgrades/shooting/ThirtyShotBot.i
+	@echo ... robots/upgrades/shooting/ThirtyShotBot.s
 .PHONY : help
 
 

@@ -22,16 +22,15 @@ struct RobotConfig
 {
     std::string type;
     std::string name;
+    std::string letter;
     int x;
     int y;
 };
 
 class ConfigReader
 {
-    private:
-
-
     public:
+    
     int rows = 0;
     int cols = 0;
     int steps = 0;
@@ -39,4 +38,8 @@ class ConfigReader
     std::vector<RobotConfig> robots;
 
     bool readConfig(const std::string& filename);
+
+    void giveLetter();
+    
 };
+

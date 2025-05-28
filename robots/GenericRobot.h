@@ -24,7 +24,5 @@ class GenericRobot : public MovingRobot, public SeeingRobot, public ShootingRobo
     public:
     GenericRobot(std::string name, std::string type, std::string letter, int xPos, int yPos);
 
-    void executeAction() override {
-        
-    }
+    void executeAction() override;
 };

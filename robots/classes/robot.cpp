@@ -20,3 +20,43 @@ Robot::Robot(std::string name, std::string type, std::string letter, int xPos, i
 {
 
 }
+
+std::string Robot::getName() const
+{
+    return std::string();
+}
+
+std::string Robot::getType() const
+{
+    return std::string();
+}
+
+std::string Robot::getLetter() const
+{
+    return letter;
+}
+
+int Robot::getXPos() const
+{
+    return 0;
+}
+
+int Robot::getYPos() const
+{
+    return 0;
+}
+
+int Robot::getLives() const
+{
+    return 0;
+}
+
+int Robot::getKills() const
+{
+    return 0;
+}
+
+bool Robot::isTracked() const
+{
+    return false;
+}
