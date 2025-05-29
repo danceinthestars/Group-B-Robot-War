@@ -78,7 +78,7 @@ int Battleground::getMaxSteps() const
     return maxSteps;
 }
 
-int Battleground::getCurrentStep()
+int Battleground::getCurrentStep() const
 {
     return currentStep;
 }

@@ -21,6 +21,11 @@ void MovingRobot::move(int newX, int newY, Battleground& field, std::vector<std:
     int dx = std::abs(newX - getXPos());
     int dy = std::abs(newY - getYPos());
 
+    // if it moves to the same coords its already in, just do nothing lol
+    if (newX == getXPos() && newY == getYPos()) {
+        return;
+    }
+
     // if a robot somehow tries to move more than 1 cell at a time
     if (dx > 1 || dy > 1) {
         actionLog.push_back(getName() + " (" + getLetter() + ") thought it was a JumpBot and tried to jump to (" +

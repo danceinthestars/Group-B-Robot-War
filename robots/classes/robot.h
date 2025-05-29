@@ -27,6 +27,7 @@ class Robot {
     int yPos;
     int lives;
     int kills;
+    int shells = 10;
     
 
     private:
@@ -49,6 +50,8 @@ class Robot {
     int getLives() const;
 
     int getKills() const;
+
+    int getShells() const;
 
     bool isTracked() const;             // for TrackBot
 

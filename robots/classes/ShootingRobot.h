@@ -24,5 +24,6 @@ class ShootingRobot : virtual public Robot
 {
     using Robot::Robot;
 
-
+    public:
+    virtual void fire(int dx, int dy, Battleground& field, std::vector<std::string>& actionLog);
 };

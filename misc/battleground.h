@@ -47,7 +47,7 @@ class Battleground
 
     int getMaxSteps() const;
 
-    int getCurrentStep();
+    int getCurrentStep() const;
 
     Cell* getCell(int x, int y) const;                      // get coordinates of a cell
 

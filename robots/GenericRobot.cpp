@@ -36,4 +36,7 @@ void GenericRobot::executeAction(Battleground& field, std::vector<std::string>& 
     int targetY = getYPos() + dy;
 
     move(targetX, targetY, field, actionLog);
+
+
+    fire(dx, dy, field, actionLog);
 }

@@ -56,6 +56,11 @@ int Robot::getKills() const
     return kills;
 }
 
+int Robot::getShells() const
+{
+    return shells;
+}
+
 bool Robot::isTracked() const
 {
     return false;   // change this once TrackBot is implemented
