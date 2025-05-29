@@ -11,6 +11,8 @@ set(SOURCES
     misc/battleground.cpp
     misc/cell.cpp
     misc/ConfigReader.cpp
+    misc/logger.cpp
+    misc/randomizer.cpp
     robots/GenericRobot.cpp
     robots/classes/robot.cpp
     robots/classes/MovingRobot.cpp

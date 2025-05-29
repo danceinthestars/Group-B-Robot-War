@@ -11,7 +11,7 @@ Phone: 018-2021399
 **********|**********|**********/
 
 #include "GenericRobot.h"
-
+#include "../misc/battleground.h"
 
 
 
@@ -25,8 +25,7 @@ GenericRobot::GenericRobot(std::string name, std::string type, std::string lette
 }
 
 
-void GenericRobot::executeAction()
+void GenericRobot::executeAction(Battleground& field, std::vector<std::string>& actionLog)
 {
-    // Decide what this robot does on its turn.
-    // For example, you could call move(), look(), shoot(), or think() here
+    look(0, 0, field, actionLog);       // looks around itself (temporary)
 }

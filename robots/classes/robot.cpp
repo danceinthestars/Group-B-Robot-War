@@ -23,12 +23,12 @@ Robot::Robot(std::string name, std::string type, std::string letter, int xPos, i
 
 std::string Robot::getName() const
 {
-    return std::string();
+    return name;
 }
 
 std::string Robot::getType() const
 {
-    return std::string();
+    return type;
 }
 
 std::string Robot::getLetter() const
@@ -38,25 +38,25 @@ std::string Robot::getLetter() const
 
 int Robot::getXPos() const
 {
-    return 0;
+    return xPos;
 }
 
 int Robot::getYPos() const
 {
-    return 0;
+    return yPos;
 }
 
 int Robot::getLives() const
 {
-    return 0;
+    return lives;
 }
 
 int Robot::getKills() const
 {
-    return 0;
+    return kills;
 }
 
 bool Robot::isTracked() const
 {
-    return false;
+    return false;   // change this once TrackBot is implemented
 }

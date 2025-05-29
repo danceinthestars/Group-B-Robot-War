@@ -52,5 +52,6 @@ class Battleground
 
     void runGame();
 
+    std::vector<Robot*> robots;                             // list of robots
     std::vector<std::string> actionLog;                     // log of actions that happen during a round
 };

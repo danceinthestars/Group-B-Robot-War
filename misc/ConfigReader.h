@@ -12,17 +12,22 @@ Phone: 018-2021399
 
 #pragma once
 
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <vector>
 #include <string>
+#include <set>
+
 
 struct RobotConfig
 {
     std::string type;
     std::string name;
     std::string letter;
+    std::string xStr;
+    std::string yStr;
     int x;
     int y;
 };
@@ -40,6 +45,13 @@ class ConfigReader
     bool readConfig(const std::string& filename);
 
     void giveLetter();
-    
+
+    std::pair<int, int> setCoordinate(
+        const std::string& xStr,
+        const std::string& yStr,
+        std::set<std::pair<int, int>>& usedCoords,
+        int rows,
+        int cols);
+
 };
 

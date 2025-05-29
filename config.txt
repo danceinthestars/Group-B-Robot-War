@@ -1,8 +1,8 @@
-M by N : 5 5
+M by N : 7 7
 steps: 10
 robots: 5
-GenericRobot Kidd 0 0
-GenericRobot Jet 1 1
-GenericRobot Alpha 2 2
-GenericRobot Beta 3 3
-GenericRobot Star 4 4
+GenericRobot Kidd random random
+GenericRobot Jet random random
+GenericRobot Alpha random random
+GenericRobot Beta random random
+GenericRobot Star random random

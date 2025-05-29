@@ -11,7 +11,11 @@ Phone: 018-2021399
 **********|**********|**********/
 
 #include "ConfigReader.h"
-
+#include "randomizer.h"
+#include <set>
+#include <stdexcept>
+#include <cctype>
+#include <algorithm>
 
 
 bool ConfigReader::readConfig(const std::string& filename)
@@ -21,6 +25,7 @@ bool ConfigReader::readConfig(const std::string& filename)
     if (!file.is_open()) return false;
 
     std::string line;
+    std::set<std::pair<int, int>> usedCoords;
 
     while (std::getline(file, line)) 
     {
@@ -46,7 +51,12 @@ bool ConfigReader::readConfig(const std::string& filename)
         {
             std::istringstream iss(line);
             RobotConfig rc;
-            iss >> rc.type >> rc.name >> rc.x >> rc.y;
+            iss >> rc.type >> rc.name >> rc.xStr >> rc.yStr;
+
+            auto [x, y] = setCoordinate(rc.xStr, rc.yStr, usedCoords, rows, cols);
+            rc.x = x;
+            rc.y = y;
+
             robots.push_back(rc);
         }
     }
@@ -66,3 +76,51 @@ void ConfigReader::giveLetter()
     }
 }
 
+std::pair<int, int> ConfigReader::setCoordinate(
+    const std::string& xStr,
+    const std::string& yStr,
+    std::set<std::pair<int, int>>& usedCoords,
+    int rows,
+    int cols)
+{
+    bool xRandom = (xStr == "random");
+    bool yRandom = (yStr == "random");
+    int x, y;
+
+    do {
+        // Generate or parse x
+        if (xRandom) {
+            x = Randomizer::generateRandom(0, rows - 1);
+        } else {
+            if (!std::all_of(xStr.begin(), xStr.end(), ::isdigit))
+                throw std::runtime_error("Invalid x coordinate: " + xStr);
+            x = std::stoi(xStr);
+        }
+
+        // Generate or parse y
+        if (yRandom) {
+            y = Randomizer::generateRandom(0, cols - 1);
+        } else {
+            if (!std::all_of(yStr.begin(), yStr.end(), ::isdigit))
+                throw std::runtime_error("Invalid y coordinate: " + yStr);
+            y = std::stoi(yStr);
+        }
+
+        // Check bounds
+        if (x < 0 || x >= rows || y < 0 || y >= cols)
+            throw std::runtime_error("Coordinates out of bounds: (" + std::to_string(x) + ", " + std::to_string(y) + ")");
+
+        // If not random and occupied, throw
+        if (!xRandom && !yRandom && usedCoords.count({x, y}) > 0)
+            throw std::runtime_error("Duplicate robot coordinates at (" + std::to_string(x) + ", " + std::to_string(y) + ")");
+
+        // If random and occupied, repeat
+        if ((xRandom || yRandom) && usedCoords.count({x, y}) > 0)
+            continue;
+
+        break;
+    } while (true);
+
+    usedCoords.insert({x, y});
+    return {x, y};
+}

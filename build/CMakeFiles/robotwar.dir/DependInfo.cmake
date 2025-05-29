@@ -12,6 +12,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/misc/ConfigReader.cpp" "CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/misc/ConfigReader.cpp.obj.d"
   "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/misc/battleground.cpp" "CMakeFiles/robotwar.dir/misc/battleground.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/misc/battleground.cpp.obj.d"
   "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/misc/cell.cpp" "CMakeFiles/robotwar.dir/misc/cell.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/misc/cell.cpp.obj.d"
+  "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/misc/logger.cpp" "CMakeFiles/robotwar.dir/misc/logger.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/misc/logger.cpp.obj.d"
+  "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/misc/randomizer.cpp" "CMakeFiles/robotwar.dir/misc/randomizer.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/misc/randomizer.cpp.obj.d"
   "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/GenericRobot.cpp" "CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/robots/GenericRobot.cpp.obj.d"
   "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/classes/MovingRobot.cpp" "CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/robots/classes/MovingRobot.cpp.obj.d"
   "C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/classes/SeeingRobot.cpp" "CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.obj" "gcc" "CMakeFiles/robotwar.dir/robots/classes/SeeingRobot.cpp.obj.d"

@@ -224,6 +224,54 @@ misc/cell.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/cell.cpp.s
 .PHONY : misc/cell.cpp.s
 
+misc/logger.obj: misc/logger.cpp.obj
+.PHONY : misc/logger.obj
+
+# target to build an object file
+misc/logger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/logger.cpp.obj
+.PHONY : misc/logger.cpp.obj
+
+misc/logger.i: misc/logger.cpp.i
+.PHONY : misc/logger.i
+
+# target to preprocess a source file
+misc/logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/logger.cpp.i
+.PHONY : misc/logger.cpp.i
+
+misc/logger.s: misc/logger.cpp.s
+.PHONY : misc/logger.s
+
+# target to generate assembly for a file
+misc/logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/logger.cpp.s
+.PHONY : misc/logger.cpp.s
+
+misc/randomizer.obj: misc/randomizer.cpp.obj
+.PHONY : misc/randomizer.obj
+
+# target to build an object file
+misc/randomizer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/randomizer.cpp.obj
+.PHONY : misc/randomizer.cpp.obj
+
+misc/randomizer.i: misc/randomizer.cpp.i
+.PHONY : misc/randomizer.i
+
+# target to preprocess a source file
+misc/randomizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/randomizer.cpp.i
+.PHONY : misc/randomizer.cpp.i
+
+misc/randomizer.s: misc/randomizer.cpp.s
+.PHONY : misc/randomizer.s
+
+# target to generate assembly for a file
+misc/randomizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robotwar.dir\build.make CMakeFiles/robotwar.dir/misc/randomizer.cpp.s
+.PHONY : misc/randomizer.cpp.s
+
 robots/GenericRobot.obj: robots/GenericRobot.cpp.obj
 .PHONY : robots/GenericRobot.obj
 
@@ -557,6 +605,12 @@ help:
 	@echo ... misc/cell.obj
 	@echo ... misc/cell.i
 	@echo ... misc/cell.s
+	@echo ... misc/logger.obj
+	@echo ... misc/logger.i
+	@echo ... misc/logger.s
+	@echo ... misc/randomizer.obj
+	@echo ... misc/randomizer.i
+	@echo ... misc/randomizer.s
 	@echo ... robots/GenericRobot.obj
 	@echo ... robots/GenericRobot.i
 	@echo ... robots/GenericRobot.s

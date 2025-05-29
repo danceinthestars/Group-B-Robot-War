@@ -14,8 +14,9 @@ Phone: 018-2021399
 
 #include <string>
 #include <memory>
+#include <vector>
 
-
+class Battleground;
 
 class Robot {
     protected:
@@ -51,6 +52,6 @@ class Robot {
 
     bool isTracked() const;             // for TrackBot
 
-    virtual void executeAction() = 0;
+    virtual void executeAction(Battleground& field, std::vector<std::string>& actionLog) = 0;
 
 };

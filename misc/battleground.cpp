@@ -85,6 +85,7 @@ void Battleground::addRobot(Robot* robot, int x, int y)
     if (cell && !cell->hasRobot()) 
     {
         cell->placeRobot(robot);
+        robots.push_back(robot);
     }
 
     // set else here if necessary to handle a case where the cell is occupied
@@ -98,7 +99,11 @@ void Battleground::runGame()
 
     for (currentStep = 1; currentStep <= maxSteps; ++currentStep)     // add "if there still has more than 1 robot" requirement later
     {
-
+        for (Robot* robot : robots)
+        {
+            if (robot)
+                robot->executeAction(*this, actionLog);
+        }
 
         std::cout << displayBattleground();
 

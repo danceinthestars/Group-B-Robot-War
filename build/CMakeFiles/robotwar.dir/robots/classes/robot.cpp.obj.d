@@ -139,4 +139,8 @@ CMakeFiles/robotwar.dir/robots/classes/robot.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
  C:/msys64/mingw64/include/c++/14.2.0/backward/auto_ptr.h \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
- C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h
+ C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h \
+ C:/msys64/mingw64/include/c++/14.2.0/vector \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc
