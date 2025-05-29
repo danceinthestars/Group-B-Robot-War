@@ -45,6 +45,10 @@ class Battleground
 
     int getCols() const;                                    // get total number of columns in the battleground
 
+    int getMaxSteps() const;
+
+    int getCurrentStep();
+
     Cell* getCell(int x, int y) const;                      // get coordinates of a cell
 
     void addRobot(Robot* robot, int x, int y);              // add a robot to the battleground

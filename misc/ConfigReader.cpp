@@ -83,21 +83,19 @@ std::pair<int, int> ConfigReader::setCoordinate(
     int rows,
     int cols)
 {
-    bool xRandom = (xStr == "random");
+    bool xRandom = (xStr == "random");      // check if x or y is set as random
     bool yRandom = (yStr == "random");
     int x, y;
 
     do {
-        // Generate or parse x
         if (xRandom) {
-            x = Randomizer::generateRandom(0, rows - 1);
+            x = Randomizer::generateRandom(0, rows - 1);    // if set as random, randomise
         } else {
-            if (!std::all_of(xStr.begin(), xStr.end(), ::isdigit))
+            if (!std::all_of(xStr.begin(), xStr.end(), ::isdigit))  // if anything else, error!!!
                 throw std::runtime_error("Invalid x coordinate: " + xStr);
             x = std::stoi(xStr);
         }
 
-        // Generate or parse y
         if (yRandom) {
             y = Randomizer::generateRandom(0, cols - 1);
         } else {
@@ -106,15 +104,12 @@ std::pair<int, int> ConfigReader::setCoordinate(
             y = std::stoi(yStr);
         }
 
-        // Check bounds
-        if (x < 0 || x >= rows || y < 0 || y >= cols)
+        if (x < 0 || x >= rows || y < 0 || y >= cols)   // checks if coords are out of the map
             throw std::runtime_error("Coordinates out of bounds: (" + std::to_string(x) + ", " + std::to_string(y) + ")");
 
-        // If not random and occupied, throw
         if (!xRandom && !yRandom && usedCoords.count({x, y}) > 0)
             throw std::runtime_error("Duplicate robot coordinates at (" + std::to_string(x) + ", " + std::to_string(y) + ")");
 
-        // If random and occupied, repeat
         if ((xRandom || yRandom) && usedCoords.count({x, y}) > 0)
             continue;
 

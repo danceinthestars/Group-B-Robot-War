@@ -73,6 +73,16 @@ int Battleground::getCols() const
     return cols;
 }
 
+int Battleground::getMaxSteps() const
+{
+    return maxSteps;
+}
+
+int Battleground::getCurrentStep()
+{
+    return currentStep;
+}
+
 Cell* Battleground::getCell(int x, int y) const
 {
     if (x < 0 || x >= rows || y < 0 || y >= cols) return nullptr;  // check if the coordinates are within bounds
@@ -106,6 +116,8 @@ void Battleground::runGame()
         }
 
         std::cout << displayBattleground();
+        
+        std::cout << "\nTurn " << getCurrentStep() << "/" << getMaxSteps() << ":" << std::endl;
 
         for (const auto& msg : actionLog) 
         {
