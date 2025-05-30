@@ -25,8 +25,9 @@ class SeeingRobot : virtual public Robot
     using Robot::Robot;
 
     public:
-    virtual std::vector<std::vector<std::string>> look(int dx, int dy, const Battleground& field, 
-            std::vector<std::string>& actionLog) const;
+    // (dx, dy) is the coords, field is the map, actionLog is the log
+    // idk why i need to write parameters like this but it works and i dont have time to change it to be more coherent
+    virtual std::vector<std::vector<std::string>> look(int dx, int dy, const Battleground& field, std::vector<std::string>& actionLog) const;
 
     
 };

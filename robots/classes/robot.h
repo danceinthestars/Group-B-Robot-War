@@ -27,7 +27,7 @@ class Robot {
     int yPos;
     int lives;
     int kills;
-    int shells = 10;
+    int shells;
     
 
     private:
@@ -56,5 +56,7 @@ class Robot {
     bool isTracked() const;             // for TrackBot
 
     virtual void executeAction(Battleground& field, std::vector<std::string>& actionLog) = 0;
+
+    void setLives(int newLives);
 
 };

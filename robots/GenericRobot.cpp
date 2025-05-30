@@ -13,6 +13,7 @@ Phone: 018-2021399
 #include "GenericRobot.h"
 #include "../misc/battleground.h"
 #include "../misc/randomizer.h"
+#include "classes/robot.h"
 
 
 
@@ -28,7 +29,7 @@ GenericRobot::GenericRobot(std::string name, std::string type, std::string lette
 
 void GenericRobot::executeAction(Battleground& field, std::vector<std::string>& actionLog)
 {
-    look(0, 0, field, actionLog);       // looks around itself (temporary)
+    look(0, 0, field, actionLog);       // all temporary code to test out the mechanics
     int dx = Randomizer::generateRandom(-1, 1);
     int dy = Randomizer::generateRandom(-1, 1);
 
@@ -40,3 +41,4 @@ void GenericRobot::executeAction(Battleground& field, std::vector<std::string>& 
 
     fire(dx, dy, field, actionLog);
 }
+

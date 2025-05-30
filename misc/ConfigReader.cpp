@@ -88,17 +88,27 @@ std::pair<int, int> ConfigReader::setCoordinate(
     int x, y;
 
     do {
-        if (xRandom) {
+        if (xRandom) 
+        {
             x = Randomizer::generateRandom(0, rows - 1);    // if set as random, randomise
-        } else {
+        } 
+        
+        else 
+        {
             if (!std::all_of(xStr.begin(), xStr.end(), ::isdigit))  // if anything else, error!!!
                 throw std::runtime_error("Invalid x coordinate: " + xStr);
+
             x = std::stoi(xStr);
+
         }
 
-        if (yRandom) {
+        if (yRandom) 
+        {
             y = Randomizer::generateRandom(0, cols - 1);
-        } else {
+        } 
+        
+        else 
+        {
             if (!std::all_of(yStr.begin(), yStr.end(), ::isdigit))
                 throw std::runtime_error("Invalid y coordinate: " + yStr);
             y = std::stoi(yStr);

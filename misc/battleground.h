@@ -53,9 +53,11 @@ class Battleground
 
     void addRobot(Robot* robot, int x, int y);              // add a robot to the battleground
 
+    void selfDestruct(Robot* robot);
 
     void runGame();
 
     std::vector<Robot*> robots;                             // list of robots
     std::vector<std::string> actionLog;                     // log of actions that happen during a round
+    std::vector<Robot*> robotsRespawning;                   // its.. robots that are respawning
 };

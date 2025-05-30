@@ -46,6 +46,7 @@ class ConfigReader
 
     void giveLetter();
 
+    // this is for to make sure that two or more robots dont spawn in the same place
     std::pair<int, int> setCoordinate(
         const std::string& xStr,
         const std::string& yStr,

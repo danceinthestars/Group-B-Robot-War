@@ -19,67 +19,69 @@ Phone: 018-2021399
 
 void ShootingRobot::fire(int dx, int dy, Battleground& field, std::vector<std::string>& actionLog)
 {
-    // a robot shouldn't be able to shoot at itself, but if it SOMEHOW manages to, i thought this would be funny LMAO
-    if (dx == 0 && dy == 0) {
-        actionLog.push_back(getName() + " (" + getLetter() + 
-        ") tried to break the Third Law of Robotics and attempted to shoot itself. You can't do that in this game.");
-        return;
-    }
+    if (shells > 0) 
+    {
+        // a robot shouldn't be able to shoot at itself, but if it SOMEHOW manages to, i thought this would be funny LMAO
+        if (dx == 0 && dy == 0) 
+        {
+            actionLog.push_back(getName() + " (" + getLetter() + ") tried to break the Third Law of Robotics and attempted to shoot itself. You can't do that in this game.");
+            return;
+        }
 
-    // only accepts parameters that are adjacent to the robot's location
-    if (std::abs(dx) > 1 || std::abs(dy) > 1) {
-        actionLog.push_back(getName() + " (" + getLetter() + ") tried to fire out of range at (" +
-                            std::to_string(getXPos() + dx) + ", " + std::to_string(getYPos() + dy) + ")");
-        return;
-    }
 
-    // if shells are empty, can't shoot; though this shouldn't happen since robots self-destruct if out of shells
-    if (shells <= 0) {
-        actionLog.push_back(getName() + " (" + getLetter() + ") tried to fire but is out of shells!");
-        return;
-    }
+        int targetX = getXPos() + dx;
+        int targetY = getYPos() + dy;
 
-    int targetX = getXPos() + dx;
-    int targetY = getYPos() + dy;
+        // shouldn't happen if i code its algorithm right, but just in case
+        if (targetX < 0 || targetX >= field.getRows() || targetY < 0 || targetY >= field.getCols()) 
+        {
+            actionLog.push_back(getName() + " (" + getLetter() + ") tried to fire out of bounds.");
+            return;
+        }
 
-    // shouldn't happen if i code its algorithm right, but just in case
-    if (targetX < 0 || targetX >= field.getRows() || targetY < 0 || targetY >= field.getCols()) {
-        actionLog.push_back(getName() + " (" + getLetter() + ") tried to fire out of the map at (" +
-                            std::to_string(targetX) + ", " + std::to_string(targetY) + ")");
-        return;
-    }
+        // 70% chance to hit
+        int hitChance = Randomizer::generateRandom(0, 100);
 
-    // now that all fail scenarios are out of the way, lower shells by one
-    shells--;
+        if (hitChance <= 70) 
+        {
+            Cell* targetCell = field.getCell(targetX, targetY);
 
-    // 70% chance to hit
-    int hitChance = Randomizer::generateRandom(1, 100);
-    if (hitChance <= 70) {
-        Cell* targetCell = field.getCell(targetX, targetY);
-        if (targetCell && targetCell->hasRobot()) {
-            Robot* target = targetCell->getRobot();
-            if (target != this) {
-                actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" +
-                                    std::to_string(targetX) + ", " + std::to_string(targetY) +
-                                    ") and HIT " + target->getName() + " (" + target->getLetter() + ")!");
-                // field.killRobot(target); // Call this when implemented
+            if (targetCell && targetCell->hasRobot()) 
+            {
+                Robot* target = targetCell->getRobot();
+    
+                actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" + std::to_string(targetX) + ", " + std::to_string(targetY) + ") and HIT " + target->getName() + " (" + target->getLetter() + ")!");
+
+                // field.killRobot(target); // REMEMBER TO UNCOMMENT THIS ONCE IMPLEMENTED!!!!!!!!
+                // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
             } 
             
-            else {
-                // Should never happen due to earlier check, but just in case
-                actionLog.push_back(getName() + " (" + getLetter() + ") tried to commit suicide! Action ignored.");
+            else // robot targets a cell that's empty
+            {                         
+                actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" + std::to_string(targetX) + ", " + std::to_string(targetY) + ") but hit nothing.");
             }
-
         } 
         
-        else {
-            actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" +
-                                std::to_string(targetX) + ", " + std::to_string(targetY) + ") but hit nothing.");
+        else 
+        {                              // robot misses (regardless of aiming at another robot or empty cell)
+            actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" + std::to_string(targetX) + ", " + std::to_string(targetY) + ") and MISSED.");
         }
-    } 
-    
-    else {
-        actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" +
-                            std::to_string(targetX) + ", " + std::to_string(targetY) + ") and MISSED.");
+        
+        // deduct shell after successful fire
+        shells--;
     }
+
+    // out of shells = self-destruct   o7 (edit: i realise that if it survives selfdestruction it can still fire into the negatives but uh.. hopefully that dont happen once i finish this)
+    if (shells <= 0) 
+    {
+        actionLog.push_back(getName() + " (" + getLetter() + ") has run out of shells and will self-destruct!");
+
+        field.selfDestruct(this); 
+
+    }
+
+    // increment kills; if kills <= 3, upgrade robot?
+    // 
+
 }

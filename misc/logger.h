@@ -9,3 +9,9 @@ Tutorial Section: TT9L
 Email: LEE.MING.FUNG@student.mmu.edu.my
 Phone: 018-2021399
 **********|**********|**********/
+
+#pragma once
+
+#include <iostream>
+#include <fstream>
+#include <sstream>

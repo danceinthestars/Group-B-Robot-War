@@ -133,3 +133,12 @@ void Battleground::runGame()
     std::cout << "Game Over!" << std::endl;
 
 }
+
+void Battleground::selfDestruct(Robot* robot)
+{
+    Cell* cell = getCell(robot->getXPos(), robot->getYPos());
+    cell->removeRobot(); // robot DIE
+
+    int lives = robot->getLives();
+    robot->setLives(lives - 1);
+}

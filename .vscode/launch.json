@@ -2,15 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Run RobotWar EXE",
-            "type": "cppvsdbg",
+            "name": "Debug Robotwar",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/bin/robotwar.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "console": "integratedTerminal",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
             "preLaunchTask": "CMake Build"
         }
     ]
