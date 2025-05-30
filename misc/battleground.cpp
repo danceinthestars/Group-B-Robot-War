@@ -18,6 +18,7 @@ Phone: 018-2021399
 // take out a robot if they get upgraded and replace them with their new upgraded form
 
 #include "battleground.h"
+#include "randomizer.h"
 
 
 
@@ -110,7 +111,7 @@ void Battleground::runGame()
     for (currentStep = 1; currentStep <= maxSteps; ++currentStep)     // add "if there still has more than 1 robot" requirement later
     {
 
-        // respawnRobot() here
+        respawnRobot();
 
         for (Robot* robot : robots)
         {
@@ -150,38 +151,34 @@ void Battleground::runGame()
 
 void Battleground::selfDestruct(Robot* robot)
 {
+    robot->setAlive(false);
+
     Cell* cell = getCell(robot->getXPos(), robot->getYPos());
     cell->removeRobot(); // robot DIE
 
     int lives = robot->getLives();
     robot->setLives(lives - 1);
-}
 
-void Battleground::killRobot(Robot* killer, Robot* target)
-{
-    target->setAlive(false);
-
-    Cell* cell = getCell(target->getXPos(), target->getYPos());
-    cell->removeRobot(); // robot DIE 2x
-
-    int newKills = killer->getKills();
-    killer->setKills(newKills + 1);
-
-    int lives = target->getLives();
-    target->setLives(lives - 1);
-
-    if (target->getLives() > 0)       // if still have lives
+    if (robot->getLives() > 0)       // if still have lives
     {
-        respawnQueue.push_back(target);
+        respawnQueue.push_back(robot);
 
-        actionLog.push_back(target->getName() + " (" + target->getLetter() + ") died! Remaining lives: " + std::to_string(target->getLives()));
+        actionLog.push_back(robot->getName() + " (" + robot->getLetter() + ") died! Remaining lives: " + std::to_string(robot->getLives()));
         
     } 
     
     else        // no more lives to respawn with
     {
-        actionLog.push_back(target->getName() + " (" + target->getLetter() + ") died and is out of lives! It is out of the game!");
+        actionLog.push_back(robot->getName() + " (" + robot->getLetter() + ") died and is out of lives! It is out of the game!");
     }
+}
+
+void Battleground::killRobot(Robot* killer, Robot* target)
+{
+    selfDestruct(target);   // i realise i could just run this instead of copying the code oops
+
+    int newKills = killer->getKills();
+    killer->setKills(newKills + 1);
 
     // killer->upgrade(); REMEMBER TO IMPLEMENT THIS!!!!!!!!
 }
@@ -190,5 +187,26 @@ void Battleground::respawnRobot()
 {
     if (respawnQueue.empty()) return;
 
+    Robot* respawnedRobot = respawnQueue.front(); // grabs the robot in the front of the queue
+    respawnQueue.erase(respawnQueue.begin()); // removes said robot from the queue
+
+    int x;
+    int y;
+
+    do {
+        x = Randomizer::generateRandom(0, getRows() - 1);
+        y = Randomizer::generateRandom(0, getCols() - 1);
+    } while (grid[x][y]->hasRobot());
+
+
+    respawnedRobot->setXPos(x);
+    respawnedRobot->setYPos(y);
+    respawnedRobot->setAlive(true);
+    
+    grid[x][y]->placeRobot(respawnedRobot);
+
+    respawnedRobot->setShells(10); // REMEMBER TO ADD TO THIS ONCE YOU IMPLEMENT 30SHELLBOT
+
+    actionLog.push_back(respawnedRobot->getName() + " (" + respawnedRobot->getLetter() + ") has respawned at (" + std::to_string(x) + ", " + std::to_string(y) + ")!");
     
 }

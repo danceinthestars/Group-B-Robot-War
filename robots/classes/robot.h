@@ -64,6 +64,12 @@ class Robot {
 
     void setKills(int newKills);
 
-    void setAlive(bool status);
+    void setAlive(bool newStatus);
+
+    void setXPos(int newX);        // mfw completely forgot to add this
+
+    void setYPos(int newY);
+
+    void setShells(int newShells);
 
 };

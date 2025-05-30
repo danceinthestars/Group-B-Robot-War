@@ -81,7 +81,22 @@ void Robot::setKills(int newKills)
     kills = newKills;
 }
 
-void Robot::setAlive(bool status)
+void Robot::setAlive(bool newStatus)
 {
-    alive = status;
+    alive = newStatus;
+}
+
+void Robot::setXPos(int newX)
+{
+    xPos = newX;
+}
+
+void Robot::setYPos(int newY)
+{
+    yPos = newY;
+}
+
+void Robot::setShells(int newShells)
+{
+    shells = newShells;
 }
