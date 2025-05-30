@@ -52,8 +52,7 @@ void ShootingRobot::fire(int dx, int dy, Battleground& field, std::vector<std::s
     
                 actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" + std::to_string(targetX) + ", " + std::to_string(targetY) + ") and HIT " + target->getName() + " (" + target->getLetter() + ")!");
 
-                // field.killRobot(target); // REMEMBER TO UNCOMMENT THIS ONCE IMPLEMENTED!!!!!!!!
-                // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                field.killRobot(this, target);
 
             } 
             

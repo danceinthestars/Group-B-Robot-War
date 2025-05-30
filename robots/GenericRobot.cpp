@@ -38,7 +38,6 @@ void GenericRobot::executeAction(Battleground& field, std::vector<std::string>& 
 
     move(targetX, targetY, field, actionLog);
 
-
     fire(dx, dy, field, actionLog);
 }
 

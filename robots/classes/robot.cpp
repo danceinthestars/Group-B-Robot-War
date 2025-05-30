@@ -16,7 +16,7 @@ Phone: 018-2021399
 #include <memory>
 
 Robot::Robot(std::string name, std::string type, std::string letter, int xPos, int yPos)
-           : name(name), type(type), letter(letter), xPos(xPos), yPos(yPos), lives(3), kills(0), shells(10)
+           : name(name), type(type), letter(letter), xPos(xPos), yPos(yPos), lives(3), kills(0), shells(10), alive(true)
 {
 
 }
@@ -69,4 +69,19 @@ bool Robot::isTracked() const
 void Robot::setLives(int newLives)
 {
     lives = newLives;
+}
+
+bool Robot::isAlive() const
+{
+    return alive;
+}
+
+void Robot::setKills(int newKills)
+{
+    kills = newKills;
+}
+
+void Robot::setAlive(bool status)
+{
+    alive = status;
 }

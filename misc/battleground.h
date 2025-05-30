@@ -55,6 +55,8 @@ class Battleground
 
     void selfDestruct(Robot* robot);
 
+    void killRobot(Robot* killer, Robot* target);
+
     void runGame();
 
     std::vector<Robot*> robots;                             // list of robots

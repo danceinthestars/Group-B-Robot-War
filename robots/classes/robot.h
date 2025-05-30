@@ -28,6 +28,7 @@ class Robot {
     int lives;
     int kills;
     int shells;
+    bool alive;
     
 
     private:
@@ -53,10 +54,16 @@ class Robot {
 
     int getShells() const;
 
+    bool isAlive() const;
+
     bool isTracked() const;             // for TrackBot
 
     virtual void executeAction(Battleground& field, std::vector<std::string>& actionLog) = 0;
 
     void setLives(int newLives);
+
+    void setKills(int newKills);
+
+    void setAlive(bool status);
 
 };

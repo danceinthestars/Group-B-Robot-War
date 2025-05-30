@@ -142,3 +142,17 @@ void Battleground::selfDestruct(Robot* robot)
     int lives = robot->getLives();
     robot->setLives(lives - 1);
 }
+
+void Battleground::killRobot(Robot* killer, Robot* target)
+{
+    target->setAlive(false);
+
+    Cell* cell = getCell(target->getXPos(), target->getYPos());
+    cell->removeRobot(); // robot DIE 2x
+
+    int newKills = killer->getKills();
+    killer->setKills(newKills + 1);
+
+    int lives = target->getLives();
+    target->setLives(lives - 1);
+}
