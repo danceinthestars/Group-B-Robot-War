@@ -59,7 +59,9 @@ class Battleground
 
     void runGame();
 
+    void respawnRobot();
+
     std::vector<Robot*> robots;                             // list of robots
     std::vector<std::string> actionLog;                     // log of actions that happen during a round
-    std::vector<Robot*> robotsRespawning;                   // its.. robots that are respawning
+    std::vector<Robot*> respawnQueue;                       // queue for robots who need to respawn
 };

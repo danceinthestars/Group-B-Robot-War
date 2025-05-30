@@ -109,13 +109,27 @@ void Battleground::runGame()
 
     for (currentStep = 1; currentStep <= maxSteps; ++currentStep)     // add "if there still has more than 1 robot" requirement later
     {
+
+        // respawnRobot() here
+
         for (Robot* robot : robots)
         {
-            if (robot)
+            if (robot->isAlive())
+            {
                 robot->executeAction(*this, actionLog);
+            };
+            
         }
 
         std::cout << displayBattleground();
+
+        std::cout << "Respawn Queue: ";
+        for (Robot* robot : respawnQueue) 
+        {
+            std::cout << robot->getName() << "(" << robot->getLetter() << ") ";
+        }
+        std::cout << std::endl;
+        
         
         std::cout << "\nTurn " << getCurrentStep() << "/" << getMaxSteps() << ":" << std::endl;
 
@@ -155,4 +169,26 @@ void Battleground::killRobot(Robot* killer, Robot* target)
 
     int lives = target->getLives();
     target->setLives(lives - 1);
+
+    if (target->getLives() > 0)       // if still have lives
+    {
+        respawnQueue.push_back(target);
+
+        actionLog.push_back(target->getName() + " (" + target->getLetter() + ") died! Remaining lives: " + std::to_string(target->getLives()));
+        
+    } 
+    
+    else        // no more lives to respawn with
+    {
+        actionLog.push_back(target->getName() + " (" + target->getLetter() + ") died and is out of lives! It is out of the game!");
+    }
+
+    // killer->upgrade(); REMEMBER TO IMPLEMENT THIS!!!!!!!!
+}
+
+void Battleground::respawnRobot()
+{
+    if (respawnQueue.empty()) return;
+
+    
 }
