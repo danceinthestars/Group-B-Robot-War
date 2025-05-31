@@ -12,3 +12,6 @@ Phone: 018-2021399
 
 
 
+// just remember when you make the target mechanic
+// get robot current coords. get target coords. minus them to get dx dy
+// or something idk its 3am man im so tired

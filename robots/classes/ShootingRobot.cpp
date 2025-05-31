@@ -38,6 +38,26 @@ void ShootingRobot::fire(int dx, int dy, Battleground& field, std::vector<std::s
             return;
         }
 
+        int rangeCheck = dx + dy;
+
+        if (shootUpgradeID == 1)
+        {
+            if (rangeCheck > 3)
+            {
+                actionLog.push_back(getName() + " (" + getLetter() + ") tried to fire out of range.");
+                return;
+            }
+        }
+
+        else
+        {
+            if (rangeCheck > 1)
+            {
+                actionLog.push_back(getName() + " (" + getLetter() + ") tried to fire out of range.");
+                return;                
+            }
+        }
+
         int accuracy = getAccuracy(); // necessary check to account for AccuracyBot
 
         int shotsFired;
