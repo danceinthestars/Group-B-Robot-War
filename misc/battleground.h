@@ -19,7 +19,7 @@ Phone: 018-2021399
 
 
 #include "cell.h"
-
+#include "logger.h"
 
 class Battleground 
 {
@@ -57,7 +57,7 @@ class Battleground
 
     void killRobot(Robot* killer, Robot* target);
 
-    void runGame();
+    void runGame(Logger& logger);
 
     void respawnRobot();
 

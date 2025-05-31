@@ -12,6 +12,23 @@ Phone: 018-2021399
 
 #pragma once
 
-#include <iostream>
 #include <fstream>
-#include <sstream>
+#include <string>
+#include <vector>
+#include <filesystem>
+
+
+
+class Logger 
+{
+    private:
+    std::ofstream ofs;
+
+    public:
+    Logger(const std::string& filename);
+    
+    void log(const std::string& message);
+    void log(const std::vector<std::string>& messages);
+    
+    void close();
+};

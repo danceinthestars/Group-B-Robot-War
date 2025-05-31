@@ -19,7 +19,7 @@ Phone: 018-2021399
 
 #include "battleground.h"
 #include "randomizer.h"
-
+#include "logger.h"
 
 
 Battleground::Battleground(int rows, int cols, int maxSteps) 
@@ -104,11 +104,11 @@ void Battleground::addRobot(Robot* robot, int x, int y)
 }
 
 
-void Battleground::runGame()
+void Battleground::runGame(Logger& logger)
 {
     std::cin.ignore();
 
-    for (currentStep = 1; currentStep <= maxSteps; ++currentStep)     // add "if there still has more than 1 robot" requirement later
+    for (currentStep = 1; currentStep <= maxSteps && robots.size() > 1; ++currentStep)
     {
 
         respawnRobot();
@@ -125,24 +125,32 @@ void Battleground::runGame()
             
         }
 
-
-        std::cout << "\nTurn " << getCurrentStep() << "/" << getMaxSteps() << ":" << std::endl;
-        std::cout << displayBattleground();
-
-        for (const auto& msg : actionLog) 
-        {
-            std::cout << msg << std::endl;
-        }
-
-        std::cout << std::endl << "Respawn Queue: " << std::endl;
         
-        for (Robot* robot : respawnQueue) 
-        {
-            std::cout << robot->getName() << "(" << robot->getLetter() << ") ";
-        }
-        std::cout << std::endl;
 
-        actionLog.clear();  
+        std::vector<std::string> turnLog;       // this is so the strings output in the right order
+
+        turnLog.push_back("\nTurn " + std::to_string(getCurrentStep()) + "/" + std::to_string(getMaxSteps()) + ":");
+        
+        turnLog.push_back(displayBattleground());
+
+        // necessary as we cant display battleground BEFORE the robots take their action since it'd give outdated field status
+        // we execute the actions first, save what happened, output up-to-date battleground, then output what happened
+        turnLog.insert(turnLog.end(), actionLog.begin(), actionLog.end());
+        
+
+        std::string respawnMsg = "Respawn Queue: ";
+        for (Robot* robot : respawnQueue)
+            respawnMsg += robot->getName() + "(" + robot->getLetter() + ") ";
+        turnLog.push_back(respawnMsg);
+
+        // Log to file
+        logger.log(turnLog);
+
+        // Also print to console if you want
+        for (const auto& msg : turnLog)
+            std::cout << msg << std::endl;
+
+        actionLog.clear();
 
         std::cout << "Press Enter to proceed to the next step..." << std::endl;
         std::cin.get();
@@ -173,6 +181,15 @@ void Battleground::selfDestruct(Robot* robot)
     else        // no more lives to respawn with
     {
         actionLog.push_back(robot->getName() + " (" + robot->getLetter() + ") died and is out of lives! It is out of the game!");
+    
+        for (auto deadIndex = robots.begin(); deadIndex != robots.end(); ++deadIndex) 
+        {
+            if (*deadIndex == robot)    // goes through robots vector and finds the dead guy and erases it from existence (i hope)
+            {
+                robots.erase(deadIndex);
+                break;
+            }
+        }
     }
 }
 
