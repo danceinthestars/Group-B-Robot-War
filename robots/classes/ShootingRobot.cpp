@@ -39,10 +39,11 @@ void ShootingRobot::fire(int dx, int dy, Battleground& field, std::vector<std::s
             return;
         }
 
-        // 70% chance to hit
         int hitChance = Randomizer::generateRandom(0, 100);
 
-        if (hitChance <= 70) 
+        int accuracy = getAccuracy(); // necessary check to account for AccuracyBot
+
+        if (hitChance <= accuracy) 
         {
             Cell* targetCell = field.getCell(targetX, targetY);
 
