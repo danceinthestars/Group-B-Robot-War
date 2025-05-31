@@ -167,3 +167,77 @@ int Robot::getAccuracy() const
 {
     return accuracy;
 }
+
+void Robot::hide()
+{
+    if (moveUpgradeID==1 && hideCount > 0 && !isHidden)
+    {
+        isHidden = true;
+        hideCount--;
+    }
+}
+
+bool Robot::getHidden() const
+{
+    return isHidden;
+}
+
+void Robot::setHidden(bool newHidden)
+{
+    isHidden = newHidden;
+}
+
+int Robot::getHideCount() const
+{
+
+}
+
+void Robot::setHideCount(int newHideCount)
+{
+
+}
+
+void Robot::jump()
+{
+
+}
+
+int Robot::getJumpCount() const
+{
+
+}
+
+void Robot::setJumpCount(int newJumpCount)
+{
+
+}
+
+void Robot::scout()
+{
+
+}
+
+int Robot::getScoutCount() const
+{
+
+}
+
+void Robot::setScoutCount(int newScoutCount)
+{
+
+}
+
+void Robot::track()
+{
+
+}
+
+int Robot::getTrackCount() const
+{
+
+}
+
+void Robot::setTrackCount(int newTrackCount)
+{
+
+}

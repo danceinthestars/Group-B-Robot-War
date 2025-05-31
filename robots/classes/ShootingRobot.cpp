@@ -46,10 +46,10 @@ void ShootingRobot::fire(int dx, int dy, Battleground& field, std::vector<std::s
         if (hitChance <= accuracy) 
         {
             Cell* targetCell = field.getCell(targetX, targetY);
+            Robot* target = targetCell->getRobot();
 
-            if (targetCell && targetCell->hasRobot()) 
+            if (targetCell && targetCell->hasRobot() && !target->getHidden())
             {
-                Robot* target = targetCell->getRobot();
     
                 actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" + std::to_string(targetX) + ", " + std::to_string(targetY) + ") and HIT " + target->getName() + " (" + target->getLetter() + ")!");
 

@@ -36,7 +36,15 @@ class Robot {
     // 1 = LongShotBot, 2 = SemiAutoBot, 3 = ThirtyShotBot, 4 = AccuracyBot
     int shootUpgradeID; 
     // 1 = ScoutBot, 2 = TrackBot
-    int seeUpgradeID;     
+    int seeUpgradeID;
+
+    // upgrade variables now
+    bool isHidden = false;
+    int hideCount = 0;
+    int jumpCount = 0;
+    int scoutCount = 0;
+    int trackCount = 0;
+
     
     std::vector<std::string> availableUpgradeAreas = {"moving", "shooting", "seeing"}; // they're long names but they're apt ok
 
@@ -85,5 +93,32 @@ class Robot {
 
     int getAccuracy() const;
     
+    void hide();
+
+    bool getHidden() const;
+
+    void setHidden(bool newHidden);
+
+    int getHideCount() const;
+
+    void setHideCount(int newHideCount);
+
+    void jump();
+
+    int getJumpCount() const;
+
+    void setJumpCount(int newJumpCount);
+
+    void scout();
+
+    int getScoutCount() const;
+
+    void setScoutCount(int newScoutCount);
+
+    void track();
+
+    int getTrackCount() const;
+
+    void setTrackCount(int newTrackCount);
 
 };

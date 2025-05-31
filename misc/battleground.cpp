@@ -118,6 +118,9 @@ void Battleground::runGame()
             if (robot->isAlive())
             {
                 robot->executeAction(*this, actionLog);
+
+                // reset stats after every round
+                robot->setHidden(false);
             };
             
         }
