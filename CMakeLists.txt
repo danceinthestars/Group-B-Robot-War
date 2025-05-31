@@ -19,13 +19,6 @@ set(SOURCES
     robots/classes/SeeingRobot.cpp
     robots/classes/ShootingRobot.cpp
     robots/classes/ThinkingRobot.cpp
-    robots/upgrades/moving/HideBot.cpp
-    robots/upgrades/moving/JumpBot.cpp
-    robots/upgrades/seeing/ScoutBot.cpp
-    robots/upgrades/seeing/TrackBot.cpp
-    robots/upgrades/shooting/LongShotBot.cpp
-    robots/upgrades/shooting/SemiAutoBot.cpp
-    robots/upgrades/shooting/ThirtyShotBot.cpp
 )
 
 # Add the executable

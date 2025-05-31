@@ -28,47 +28,58 @@ void ShootingRobot::fire(int dx, int dy, Battleground& field, std::vector<std::s
             return;
         }
 
-
         int targetX = getXPos() + dx;
         int targetY = getYPos() + dy;
 
-        // shouldn't happen if i code its algorithm right, but just in case
+        // if target is out of the map
         if (targetX < 0 || targetX >= field.getRows() || targetY < 0 || targetY >= field.getCols()) 
         {
             actionLog.push_back(getName() + " (" + getLetter() + ") tried to fire out of bounds.");
             return;
         }
 
-        int hitChance = Randomizer::generateRandom(0, 100);
-
         int accuracy = getAccuracy(); // necessary check to account for AccuracyBot
 
-        if (hitChance <= accuracy) 
+        int shotsFired;
+        if (shootUpgradeID == 2)
         {
-            Cell* targetCell = field.getCell(targetX, targetY);
-            Robot* target = targetCell->getRobot();
+            shotsFired = 3;
+        }
+        else
+        {
+            shotsFired = 1;
+        }
 
-            if (targetCell && targetCell->hasRobot() && !target->getHidden())
+        for (int i = 0; i < shotsFired; i++) {
+            int hitChance = Randomizer::generateRandom(0, 100);
+
+            if (hitChance <= accuracy) 
             {
-    
-                actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" + std::to_string(targetX) + ", " + std::to_string(targetY) + ") and HIT " + target->getName() + " (" + target->getLetter() + ")!");
+                Cell* targetCell = field.getCell(targetX, targetY);
+                Robot* target = targetCell->getRobot();
 
-                field.killRobot(this, target);
+                if (targetCell && targetCell->hasRobot() && !target->getHidden())
+                {
+        
+                    actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" + std::to_string(targetX) + ", " + std::to_string(targetY) + ") and HIT " + target->getName() + " (" + target->getLetter() + ")!");
 
+                    field.killRobot(this, target);
+
+                } 
+                
+                else // robot targets a cell that's empty
+                {                         
+                    actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" + std::to_string(targetX) + ", " + std::to_string(targetY) + ") but hit nothing.");
+                }
             } 
             
-            else // robot targets a cell that's empty
-            {                         
-                actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" + std::to_string(targetX) + ", " + std::to_string(targetY) + ") but hit nothing.");
+            else 
+            {                              // robot misses (regardless of aiming at another robot or empty cell)
+                actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" + std::to_string(targetX) + ", " + std::to_string(targetY) + ") and MISSED.");
             }
-        } 
-        
-        else 
-        {                              // robot misses (regardless of aiming at another robot or empty cell)
-            actionLog.push_back(getName() + " (" + getLetter() + ") fired at (" + std::to_string(targetX) + ", " + std::to_string(targetY) + ") and MISSED.");
+
         }
-        
-        // deduct shell after successful fire
+
         shells--;
     }
 

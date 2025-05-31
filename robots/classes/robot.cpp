@@ -129,21 +129,38 @@ void Robot::upgrade(std::vector<std::string>& actionLog) {
         int moveChoice = Randomizer::generateRandom(1, 3);
         moveUpgradeID = moveChoice;
 
-        if (moveChoice == 1) upgradeName = "HideBot";
-        else if (moveChoice == 2) upgradeName = "JumpBot";
+        if (moveChoice == 1) 
+        {
+            upgradeName = "HideBot";
+            setHideCount(3);
+        }
+
+        else if (moveChoice == 2)
+        {
+            upgradeName = "JumpBot";
+            setJumpCount(3);
+        } 
+
         else if (moveChoice == 3) upgradeName = "CrushBot";
     }
 
     else if (chosenArea == "shooting") 
     {
         // 1 = LongShotBot, 2 = SemiAutoBot, 3 = ThirtyShotBot, 4 = AccuracyBot
-        int shootChoice = Randomizer::generateRandom(1, 4);
+        int shootChoice = Randomizer::generateRandom(1, 3);
         shootUpgradeID = shootChoice;
 
         if (shootChoice == 1) upgradeName = "LongShotBot";
-        else if (shootChoice == 2) upgradeName = "SemiAutoBot";
-        else if (shootChoice == 3) upgradeName = "ThirtyShotBot";
-        else if (shootChoice == 4) upgradeName = "AccuracyBot";
+        else if (shootChoice == 2) 
+        {
+            upgradeName = "SemiAutoBot";
+            availableUpgradeAreas.push_back("shootingTier2");
+        }
+        else if (shootChoice == 3)
+        {
+            upgradeName = "ThirtyShotBot";
+            setShells(30);
+        }
     }
 
     else if (chosenArea == "seeing")
@@ -156,16 +173,34 @@ void Robot::upgrade(std::vector<std::string>& actionLog) {
         else if (seeChoice == 2) upgradeName = "TrackBot";
     }
 
+    else if (chosenArea == "healing")
+    {
+        upgradeName = "Heal One Life";
+        lives++;
+    }
+
+    else if (chosenArea == "shootingTier2")
+    {
+        shootUpgradeID = 4;
+        upgradeName = "AccuracyBot";
+        setAccuracy(100);
+    }
+
     availableUpgradeAreas.erase(availableUpgradeAreas.begin() + upgradeAreaIndex);
 
     actionLog.push_back(getName() + " (" + getLetter() + ") chose the " + upgradeName + " upgrade!");
-    // note to self: im pretty proud of myself for this one LOL i hope it works
+    // note to self: im pretty proud of myself for this one LOL i hope it works UPDATE: IT WORKS SO FREAKING WELL IM SO HAPPY
 
 }
 
 int Robot::getAccuracy() const
 {
     return accuracy;
+}
+
+void Robot::setAccuracy(int newAccuracy)
+{
+    accuracy = newAccuracy;
 }
 
 void Robot::hide()
@@ -189,27 +224,22 @@ void Robot::setHidden(bool newHidden)
 
 int Robot::getHideCount() const
 {
-
+    return hideCount;
 }
 
 void Robot::setHideCount(int newHideCount)
 {
-
-}
-
-void Robot::jump()
-{
-
+    hideCount = newHideCount;
 }
 
 int Robot::getJumpCount() const
 {
-
+    return jumpCount;
 }
 
 void Robot::setJumpCount(int newJumpCount)
 {
-
+    jumpCount = newJumpCount;
 }
 
 void Robot::scout()

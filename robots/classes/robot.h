@@ -46,7 +46,7 @@ class Robot {
     int trackCount = 0;
 
     
-    std::vector<std::string> availableUpgradeAreas = {"moving", "shooting", "seeing"}; // they're long names but they're apt ok
+    std::vector<std::string> availableUpgradeAreas = {"moving", "shooting", "seeing", "healing"}; // they're long names but they're apt ok
 
     private:
 
@@ -93,6 +93,8 @@ class Robot {
 
     int getAccuracy() const;
     
+    void setAccuracy(int newAccuracy);
+    
     void hide();
 
     bool getHidden() const;
@@ -102,8 +104,6 @@ class Robot {
     int getHideCount() const;
 
     void setHideCount(int newHideCount);
-
-    void jump();
 
     int getJumpCount() const;
 

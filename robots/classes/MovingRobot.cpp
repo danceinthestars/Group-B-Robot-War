@@ -21,43 +21,83 @@ void MovingRobot::move(int newX, int newY, Battleground& field, std::vector<std:
     int dx = std::abs(newX - getXPos());
     int dy = std::abs(newY - getYPos());
 
-    // if it moves to the same coords its already in, just do nothing lol
-    if (newX == getXPos() && newY == getYPos()) {
-        return;
-    }
+    Cell* dest = field.getCell(newX, newY);
 
-    // if a robot somehow tries to move more than 1 cell at a time
-    if (dx > 1 || dy > 1) {
-        actionLog.push_back(getName() + " (" + getLetter() + ") thought it was a JumpBot and tried to jump to (" +
-                            std::to_string(newX) + ", " + std::to_string(newY) + "), but fails.");
+    // if it moves to the same coords its already in, just do nothing lol
+    if (newX == getXPos() && newY == getYPos()) 
+    {
         return;
     }
 
     // for if a robot tries to move out of bounds
-    if (newX < 0 || newX >= field.getRows() || newY < 0 || newY >= field.getCols()) {
-        actionLog.push_back(getName() + " (" + getLetter() + ") tried to move out of the map to (" +
-                            std::to_string(newX) + ", " + std::to_string(newY) + ")");
+    if (newX < 0 || newX >= field.getRows() || newY < 0 || newY >= field.getCols()) 
+    {
+        actionLog.push_back(getName() + " (" + getLetter() + ") tried to move out of the map to (" + std::to_string(newX) + ", " + std::to_string(newY) + ")");
         return;
     }
+
+    // if a robot tries to move more than 1 cell away, check if it's a jumpbot
+    if (dx > 1 || dy > 1) 
+    {
+        if (moveUpgradeID == 2 && jumpCount > 0)
+        {
+            if (dest->hasRobot())   // im repeating code from below i know its bad but im out of time to be clever
+            {
+                actionLog.push_back(getName() + " (" + getLetter() + ") tried to move to (" + std::to_string(newX) + ", " + std::to_string(newY) + ") but got blocked.");
+                return;
+            }
+        
+        moveRobot(newX, newY, field);
+
+        actionLog.push_back(getName() + " (" + getLetter() + ") jumped to (" + std::to_string(newX) + ", " + std::to_string(newY) + ")!");
+        jumpCount--;
+
+        return;
+        }
+
+        else
+        {
+        actionLog.push_back(getName() + " (" + getLetter() + ") thought it was a JumpBot and tried to jump to (" + std::to_string(newX) + ", " + std::to_string(newY) + "), but fails.");
+        return;
+        }
+
+    }
+
 
     // for if a robot tries to move into an occupied cell
-    Cell* dest = field.getCell(newX, newY);
-    if (dest->hasRobot()) {
-        actionLog.push_back(getName() + " (" + getLetter() + ") tried to move to (" +
-                            std::to_string(newX) + ", " + std::to_string(newY) + ") but got blocked.");
-        return;
+    if (dest->hasRobot()) 
+    {
+        if (moveUpgradeID == 3) {
+            field.killRobot(this, dest->getRobot());
+            moveRobot(newX, newY, field);
+
+            actionLog.push_back(getName() + " (" + getLetter() + ") moved to (" + std::to_string(newX) + ", " + std::to_string(newY) + ") and crushed " + dest->getRobot()->getName() + " (" + dest->getRobot()->getLetter() + ")!");
+        }
+
+        else
+        {
+            actionLog.push_back(getName() + " (" + getLetter() + ") tried to move to (" + std::to_string(newX) + ", " + std::to_string(newY) + ") but got blocked.");
+            return;
+        }
+
     }
 
-    // remove robot from current cell
+    moveRobot(newX, newY, field);
+
+    actionLog.push_back(getName() + " (" + getLetter() + ") moved to (" + std::to_string(newX) + ", " + std::to_string(newY) + ").");
+}
+
+
+
+void MovingRobot::moveRobot(int newX, int newY, Battleground& field)
+{
+    Cell* dest = field.getCell(newX, newY);
+
     Cell* current = field.getCell(getXPos(), getYPos());
     if (current) current->removeRobot();
 
-    // place robot in new cell
     dest->placeRobot(this);
 
     xPos = newX;
     yPos = newY;
-
-    actionLog.push_back(getName() + " (" + getLetter() + ") moved to (" +
-                        std::to_string(newX) + ", " + std::to_string(newY) + ")");
 }

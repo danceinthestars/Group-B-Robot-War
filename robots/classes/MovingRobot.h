@@ -26,4 +26,6 @@ class MovingRobot : virtual public Robot
 
     public:
     virtual void move(int newX, int newY, Battleground& field, std::vector<std::string>& actionLog);
+
+    void moveRobot(int newX, int newY, Battleground& field);
 };

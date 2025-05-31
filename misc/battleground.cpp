@@ -125,19 +125,17 @@ void Battleground::runGame()
             
         }
 
-        std::cout << displayBattleground();
 
-        
-        
-        
         std::cout << "\nTurn " << getCurrentStep() << "/" << getMaxSteps() << ":" << std::endl;
+        std::cout << displayBattleground();
 
         for (const auto& msg : actionLog) 
         {
             std::cout << msg << std::endl;
         }
 
-        std::cout << "Respawn Queue: ";
+        std::cout << std::endl << "Respawn Queue: " << std::endl;
+        
         for (Robot* robot : respawnQueue) 
         {
             std::cout << robot->getName() << "(" << robot->getLetter() << ") ";
