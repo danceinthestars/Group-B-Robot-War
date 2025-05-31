@@ -20,7 +20,7 @@ Phone: 018-2021399
 
 Robot::Robot(std::string name, std::string type, std::string letter, int xPos, int yPos)
            : name(name), type(type), letter(letter), xPos(xPos), yPos(yPos), 
-           lives(3), shells(10), 
+           lives(3), accuracy(70), shells(10), 
            alive(true), //upgradeCount(0),
            moveUpgradeID(0), shootUpgradeID(0), seeUpgradeID(0)
 {
@@ -161,4 +161,9 @@ void Robot::upgrade(std::vector<std::string>& actionLog) {
     actionLog.push_back(getName() + " (" + getLetter() + ") chose the " + upgradeName + " upgrade!");
     // note to self: im pretty proud of myself for this one LOL i hope it works
 
-} 
+}
+
+int Robot::getAccuracy() const
+{
+    return accuracy;
+}

@@ -26,6 +26,7 @@ class Robot {
     int xPos;
     int yPos;
     int lives;
+    int accuracy;
     int shells;
     bool alive;
     //int upgradeCount;
@@ -81,5 +82,8 @@ class Robot {
     void setShells(int newShells);
 
     void upgrade(std::vector<std::string>& actionLog);
+
+    int getAccuracy() const;
+    
 
 };
