@@ -124,12 +124,7 @@ void Battleground::runGame()
 
         std::cout << displayBattleground();
 
-        std::cout << "Respawn Queue: ";
-        for (Robot* robot : respawnQueue) 
-        {
-            std::cout << robot->getName() << "(" << robot->getLetter() << ") ";
-        }
-        std::cout << std::endl;
+        
         
         
         std::cout << "\nTurn " << getCurrentStep() << "/" << getMaxSteps() << ":" << std::endl;
@@ -138,6 +133,13 @@ void Battleground::runGame()
         {
             std::cout << msg << std::endl;
         }
+
+        std::cout << "Respawn Queue: ";
+        for (Robot* robot : respawnQueue) 
+        {
+            std::cout << robot->getName() << "(" << robot->getLetter() << ") ";
+        }
+        std::cout << std::endl;
 
         actionLog.clear();  
 
@@ -177,10 +179,7 @@ void Battleground::killRobot(Robot* killer, Robot* target)
 {
     selfDestruct(target);   // i realise i could just run this instead of copying the code oops
 
-    int newKills = killer->getKills();
-    killer->setKills(newKills + 1);
-
-    // killer->upgrade(); REMEMBER TO IMPLEMENT THIS!!!!!!!!
+    killer->upgrade(actionLog);
 }
 
 void Battleground::respawnRobot()

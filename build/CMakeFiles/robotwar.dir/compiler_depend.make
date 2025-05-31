@@ -1548,6 +1548,7 @@ CMakeFiles/robotwar.dir/robots/classes/ShootingRobot.cpp.obj: C:/Users/Haru/Docu
 CMakeFiles/robotwar.dir/robots/classes/ThinkingRobot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/classes/ThinkingRobot.cpp
 
 CMakeFiles/robotwar.dir/robots/classes/robot.cpp.obj: C:/Users/Haru/Documents/Projects/Group-B-Robot-War/robots/classes/robot.cpp \
+  C:/Users/Haru/Documents/Projects/Group-B-Robot-War/misc/randomizer.h \
   C:/msys64/mingw64/include/_mingw.h \
   C:/msys64/mingw64/include/_mingw_mac.h \
   C:/msys64/mingw64/include/_mingw_off_t.h \

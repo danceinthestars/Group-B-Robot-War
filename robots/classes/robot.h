@@ -26,10 +26,18 @@ class Robot {
     int xPos;
     int yPos;
     int lives;
-    int kills;
     int shells;
     bool alive;
+    //int upgradeCount;
+
+    // 1 = Hidebot, 2 = JumpBot, 3 = CrushBot
+    int moveUpgradeID;      
+    // 1 = LongShotBot, 2 = SemiAutoBot, 3 = ThirtyShotBot, 4 = AccuracyBot
+    int shootUpgradeID; 
+    // 1 = ScoutBot, 2 = TrackBot
+    int seeUpgradeID;     
     
+    std::vector<std::string> availableUpgradeAreas = {"moving", "shooting", "seeing"}; // they're long names but they're apt ok
 
     private:
 
@@ -50,7 +58,7 @@ class Robot {
 
     int getLives() const;
 
-    int getKills() const;
+    //int getUpgradeCount() const;
 
     int getShells() const;
 
@@ -62,7 +70,7 @@ class Robot {
 
     void setLives(int newLives);
 
-    void setKills(int newKills);
+    //void setUpgradeCount(int newUpgradeCount);
 
     void setAlive(bool newStatus);
 
@@ -71,5 +79,7 @@ class Robot {
     void setYPos(int newY);
 
     void setShells(int newShells);
+
+    void upgrade(std::vector<std::string>& actionLog);
 
 };
