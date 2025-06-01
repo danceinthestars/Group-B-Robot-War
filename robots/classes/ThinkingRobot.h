@@ -36,5 +36,6 @@ class ThinkingRobot : virtual public Robot
 {
     using Robot::Robot;
 
-
+    public:
+    Robot* findEnemy(const Battleground& field);
 };

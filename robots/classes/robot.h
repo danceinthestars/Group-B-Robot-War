@@ -46,6 +46,12 @@ class Robot {
     int trackCount = 0;
 
     std::vector<Robot*> trackedRobots;
+    bool tracked;
+
+    // can only use each move once
+    bool looked;
+    bool moved;
+    bool fired;
 
     
     std::vector<std::string> availableUpgradeAreas = {"moving", "shooting", "seeing", "healing"}; // they're long names but they're apt ok
@@ -122,5 +128,17 @@ class Robot {
     int getTrackCount() const;
 
     void setTrackCount(int newTrackCount);
+
+    void setTracked(bool newTracked);
+
+    bool getMoved() const;
+
+    void setMoved(bool newMoved);
+
+    bool getFired() const;
+
+    void setFired(bool newFired);
+
+
 
 };
