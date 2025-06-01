@@ -2,12 +2,12 @@
 Program: ConfigReader.cpp
 Course: OOPDS
 Trimester: 2510
-Name: Lee Ming Fung
-ID: 243UC247K7
+Name: Nur Damia Adlina Binti Kamarulazizi 
+ID: 242UC244TE
 Lecture Section: TC3L
 Tutorial Section: TT9L
-Email: LEE.MING.FUNG@student.mmu.edu.my
-Phone: 018-2021399
+Email: nur.damia.adlina@student.mmu.edu.my
+Phone: 019-7843211
 **********|**********|**********/
 
 #include "ConfigReader.h"
