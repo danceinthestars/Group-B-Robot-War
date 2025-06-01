@@ -14,8 +14,10 @@ Phone: 019-7843211
 #include "randomizer.h"
 #include <set>
 #include <stdexcept>
-#include <cctype>
-#include <algorithm>
+#include <string>
+#include <sstream>
+#include <fstream>
+#include <iostream>
 
 
 bool ConfigReader::readConfig(const std::string& filename)
@@ -47,7 +49,7 @@ bool ConfigReader::readConfig(const std::string& filename)
             iss >> robotCount;
         } 
         
-        else if (!line.empty() && isalpha(line[0])) 
+        else if (!line.empty() && ((line[0] >= 'A' && line[0] <= 'Z') || (line[0] >= 'a' && line[0] <= 'z'))) 
         {
             std::istringstream iss(line);
             RobotConfig rc;
@@ -95,10 +97,17 @@ std::pair<int, int> ConfigReader::setCoordinate(
         
         else 
         {
-            if (!std::all_of(xStr.begin(), xStr.end(), ::isdigit))  // if anything else, error!!!
-                throw std::runtime_error("Invalid x coordinate: " + xStr);
-
-            x = std::stoi(xStr);
+        bool isXNumeric = true;
+        for (char ch : xStr) {
+            if (ch < '0' || ch > '9') {
+                isXNumeric = false;
+                break;
+            }
+        }
+        if (!isXNumeric)
+        throw std::runtime_error("Invalid x coordinate: " + xStr);  // if anything else, error!!!
+        
+        x = std::stoi(xStr);
 
         }
 
@@ -109,9 +118,18 @@ std::pair<int, int> ConfigReader::setCoordinate(
         
         else 
         {
-            if (!std::all_of(yStr.begin(), yStr.end(), ::isdigit))
-                throw std::runtime_error("Invalid y coordinate: " + yStr);
-            y = std::stoi(yStr);
+        bool isYNumeric = true;
+        for (char ch : yStr) {
+            if (ch < '0' || ch > '9') {
+                isYNumeric = false;
+                break;
+            }
+        }
+        
+        if (!isYNumeric)
+        throw std::runtime_error("Invalid y coordinate: " + yStr);
+        
+        y = std::stoi(yStr);
         }
 
         if (x < 0 || x >= rows || y < 0 || y >= cols)   // checks if coords are out of the map
