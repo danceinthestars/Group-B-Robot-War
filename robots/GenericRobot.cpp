@@ -145,4 +145,3 @@ void GenericRobot::executeAction(Battleground& field, std::vector<std::string>& 
 
     }
 }
-
