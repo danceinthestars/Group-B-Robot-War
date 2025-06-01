@@ -74,7 +74,7 @@ void GenericRobot::executeAction(Battleground& field, std::vector<std::string>& 
             int jumpY = getYPos() + (dy != 0 ? (dy > 0 ? 2 : -2) : 0);
 
             move(jumpX, jumpY, field, actionLog);
-            // does not make moved = true here cause jump is a separate action
+            setMoved(true);
 
             return;
         }
