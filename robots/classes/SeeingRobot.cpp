@@ -116,6 +116,12 @@ std::vector<std::vector<std::string>> SeeingRobot::scout(int dx, int dy, const B
 
 std::vector<std::vector<std::string>> SeeingRobot::receiveTrackedPositions(int dx, int dy, const Battleground& field, std::vector<std::string>& actionLog) const
 {
+
+    if (seeUpgradeID != 2 || trackCount <= 0) 
+    {
+        return {};
+    }
+
     int rows = field.getRows();     // gets the whole map and sees all the enemies
     int cols = field.getCols();
     std::vector<std::vector<std::string>> area(rows, std::vector<std::string>(cols, "EMPTY"));
@@ -129,6 +135,8 @@ std::vector<std::vector<std::string>> SeeingRobot::receiveTrackedPositions(int d
             area[x][y] = "ENEMY";
         }
     }
+
+    return area;
     
                 // NOTE: if robot does look(), it would override the tracked area so the 
                 // robot would not be able to see the robots its tracked anymore

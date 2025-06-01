@@ -22,7 +22,8 @@ Robot::Robot(std::string name, std::string type, std::string letter, int xPos, i
            : name(name), type(type), letter(letter), xPos(xPos), yPos(yPos), 
            lives(3), accuracy(70), shells(10), 
            alive(true), //upgradeCount(0),
-           moveUpgradeID(0), shootUpgradeID(0), seeUpgradeID(0)
+           moveUpgradeID(0), shootUpgradeID(0), seeUpgradeID(0),
+           fired(false), looked(false), moved(false)
 {
 
 }
@@ -270,7 +271,14 @@ void Robot::track(Robot* target, std::vector<std::string>& actionLog)
 
         // IDK IF I HAVE TIME TO FIGURE OUT THE LOGIC BEHIND THIS
         trackCount--;
+
+        target->setTracked(true);
     }
+}
+
+void Robot::setTracked(bool newTracked)
+{
+    tracked = newTracked;
 }
 
 const std::vector<Robot*>& Robot::getTrackedRobots() const 
@@ -286,4 +294,24 @@ int Robot::getTrackCount() const
 void Robot::setTrackCount(int newTrackCount)
 {
     trackCount = newTrackCount;
+}
+
+bool Robot::getMoved() const
+{
+    return moved;
+}
+
+void Robot::setMoved(bool newMoved)
+{
+    moved = newMoved;
+}
+
+bool Robot::getFired() const
+{
+    return fired;
+}
+
+void Robot::setFired(bool newFired)
+{
+    fired = newFired;
 }

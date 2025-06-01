@@ -12,6 +12,27 @@ Phone: 018-2021399
 
 
 
-// just remember when you make the target mechanic
-// get robot current coords. get target coords. minus them to get dx dy
-// or something idk its 3am man im so tired
+#include "ThinkingRobot.h"
+#include "../../misc/randomizer.h"
+
+
+
+Robot* ThinkingRobot::findEnemy(const Battleground& field)
+{
+    int minDist = 999999;
+    Robot* closest = nullptr;
+    
+    for (Robot* other : field.robots) 
+    {
+        if (other == this || !other->isAlive()) continue;
+
+        int dist = std::abs(getXPos() - other->getXPos()) + std::abs(getYPos() - other->getYPos());
+
+        if (dist < minDist) 
+        {
+            minDist = dist;
+            closest = other;
+        }
+    }
+    return closest;
+}

@@ -115,12 +115,14 @@ void Battleground::runGame(Logger& logger)
 
         for (Robot* robot : robots)
         {
+            robot->setHidden(false);
+            robot->setMoved(false); 
+            robot->setFired(false); 
+            
             if (robot->isAlive())
             {
                 robot->executeAction(*this, actionLog);
 
-                // reset stats after every round
-                robot->setHidden(false);
             };
             
         }

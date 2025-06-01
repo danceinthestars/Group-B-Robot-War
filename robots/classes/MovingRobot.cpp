@@ -71,7 +71,7 @@ void MovingRobot::move(int newX, int newY, Battleground& field, std::vector<std:
             field.killRobot(this, dest->getRobot());
             moveRobot(newX, newY, field);
 
-            actionLog.push_back(getName() + " (" + getLetter() + ") moved to (" + std::to_string(newX) + ", " + std::to_string(newY) + ") and crushed " + dest->getRobot()->getName() + " (" + dest->getRobot()->getLetter() + ")!");
+            actionLog.push_back(getName() + " (" + getLetter() + ") moved to (" + std::to_string(newX) + ", " + std::to_string(newY) + ") and crushed an enemy!");
         }
 
         else
