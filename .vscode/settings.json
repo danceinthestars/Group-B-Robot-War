@@ -7,6 +7,7 @@
         "cctype": "cpp",
         "charconv": "cpp",
         "clocale": "cpp",
+        "cmake.generator": "MinGW Makefiles",
         "cmath": "cpp",
         "compare": "cpp",
         "concepts": "cpp",

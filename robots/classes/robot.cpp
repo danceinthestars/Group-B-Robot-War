@@ -169,8 +169,16 @@ void Robot::upgrade(std::vector<std::string>& actionLog) {
         int seeChoice = Randomizer::generateRandom(1, 2);
         seeUpgradeID = seeChoice;
         
-        if (seeChoice == 1) upgradeName = "ScoutBot";
-        else if (seeChoice == 2) upgradeName = "TrackBot";
+        if (seeChoice == 1) 
+        {
+            upgradeName = "ScoutBot";
+            setScoutCount(3);
+        }
+        else if (seeChoice == 2) 
+        {
+            upgradeName = "TrackBot";
+            setTrackCount(3);
+        }
     }
 
     else if (chosenArea == "healing")
@@ -242,32 +250,40 @@ void Robot::setJumpCount(int newJumpCount)
     jumpCount = newJumpCount;
 }
 
-void Robot::scout()
-{
-
-}
-
 int Robot::getScoutCount() const
 {
-
+    return scoutCount;
 }
 
 void Robot::setScoutCount(int newScoutCount)
 {
-
+    scoutCount = newScoutCount;
 }
 
-void Robot::track()
+void Robot::track(Robot* target, std::vector<std::string>& actionLog)
 {
+    if (seeUpgradeID == 2 && trackCount > 0 && target != this)
+    {
+        trackedRobots.push_back(target);
+        
+        actionLog.push_back(getName() + " (" + getLetter() + ") planted a tracker on " + target->getName() + " (" + target->getLetter() + ")!");
 
+        // IDK IF I HAVE TIME TO FIGURE OUT THE LOGIC BEHIND THIS
+        trackCount--;
+    }
+}
+
+const std::vector<Robot*>& Robot::getTrackedRobots() const 
+{
+    return trackedRobots;
 }
 
 int Robot::getTrackCount() const
 {
-
+    return trackCount;
 }
 
 void Robot::setTrackCount(int newTrackCount)
 {
-
+    trackCount = newTrackCount;
 }

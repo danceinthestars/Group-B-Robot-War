@@ -1,0 +1,102 @@
+
+Turn 1/35:
+# # # # # # #
+#           #
+#     B   A #
+#           #
+# E         #
+#     D C   #
+# # # # # # #
+
+Kidd (A) looked around (3, 2)
+Kidd (A) moved to (4, 3).
+Kidd (A) tried to fire out of bounds.
+Jet (B) looked around (1, 2)
+Jet (B) moved to (2, 3).
+Jet (B) tried to fire out of range.
+Alpha (C) looked around (4, 0)
+Alpha (C) moved to (3, 0).
+Alpha (C) fired at (2, 0) but hit nothing.
+Beta (D) looked around (2, 1)
+Beta (D) moved to (2, 0).
+Beta (D) tried to fire out of bounds.
+Star (E) looked around (1, 0)
+Star (E) moved to (0, 1).
+Star (E) tried to fire out of bounds.
+Respawn Queue: 
+
+Turn 2/35:
+# # # # # # #
+#           #
+#     B   A #
+#           #
+#           #
+# E D   C   #
+# # # # # # #
+
+Kidd (A) looked around (4, 3)
+Kidd (A) tried to move out of the map to (5, 2)
+Kidd (A) tried to fire out of bounds.
+Jet (B) looked around (2, 3)
+Jet (B) tried to break the Third Law of Robotics and attempted to shoot itself. You can't do that in this game.
+Alpha (C) looked around (3, 0)
+Alpha (C) tried to move out of the map to (3, -1)
+Alpha (C) tried to fire out of bounds.
+Beta (D) looked around (2, 0)
+Beta (D) moved to (1, 0).
+Beta (D) fired at (0, 0) but hit nothing.
+Star (E) looked around (0, 1)
+Star (E) moved to (0, 0).
+Star (E) tried to fire out of bounds.
+Respawn Queue: 
+
+Turn 3/35:
+# # # # # # #
+#     B     #
+#         A #
+#           #
+#           #
+# E   C     #
+# # # # # # #
+
+Kidd (A) looked around (4, 3)
+Kidd (A) tried to move out of the map to (5, 2)
+Kidd (A) tried to fire out of bounds.
+Jet (B) looked around (2, 3)
+Jet (B) moved to (2, 4).
+Jet (B) tried to fire out of bounds.
+Alpha (C) looked around (3, 0)
+Alpha (C) moved to (2, 0).
+Alpha (C) fired at (1, 0) and HIT Beta (D)!
+Beta (D) died! Remaining lives: 2
+Alpha (C) chose the TrackBot upgrade!
+Star (E) looked around (0, 0)
+Star (E) tried to break the Third Law of Robotics and attempted to shoot itself. You can't do that in this game.
+Respawn Queue: Beta(D) 
+
+Turn 4/35:
+# # # # # # #
+#     B   D #
+#         A #
+#           #
+#           #
+# E   C     #
+# # # # # # #
+
+Beta (D) has respawned at (3, 3)!
+Kidd (A) looked around (4, 3)
+Kidd (A) tried to move out of the map to (5, 3)
+Kidd (A) tried to fire out of bounds.
+Jet (B) looked around (2, 4)
+Jet (B) tried to move to (3, 3) but got blocked.
+Jet (B) fired at (3, 3) and MISSED.
+Alpha (C) looked around (2, 0)
+Alpha (C) tried to move out of the map to (1, -1)
+Alpha (C) tried to fire out of bounds.
+Beta (D) looked around (3, 3)
+Beta (D) moved to (4, 4).
+Beta (D) tried to fire out of bounds.
+Star (E) looked around (0, 0)
+Star (E) tried to move out of the map to (-1, -1)
+Star (E) tried to fire out of bounds.
+Respawn Queue: 

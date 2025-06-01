@@ -45,6 +45,8 @@ class Robot {
     int scoutCount = 0;
     int trackCount = 0;
 
+    std::vector<Robot*> trackedRobots;
+
     
     std::vector<std::string> availableUpgradeAreas = {"moving", "shooting", "seeing", "healing"}; // they're long names but they're apt ok
 
@@ -109,13 +111,13 @@ class Robot {
 
     void setJumpCount(int newJumpCount);
 
-    void scout();
-
     int getScoutCount() const;
 
     void setScoutCount(int newScoutCount);
 
-    void track();
+    void track(Robot* target, std::vector<std::string>& actionLog);
+
+    const std::vector<Robot*>& getTrackedRobots() const;
 
     int getTrackCount() const;
 

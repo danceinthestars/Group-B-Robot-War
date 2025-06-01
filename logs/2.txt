@@ -1,0 +1,26 @@
+
+Turn 1/35:
+# # # # # # #
+#     B   A #
+#         D #
+#   E       #
+#           #
+#   C       #
+# # # # # # #
+
+Kidd (A) looked around (4, 4)
+Kidd (A) tried to move out of the map to (4, 5)
+Kidd (A) tried to fire out of bounds.
+Jet (B) looked around (2, 4)
+Jet (B) tried to move out of the map to (2, 5)
+Jet (B) tried to fire out of bounds.
+Alpha (C) looked around (1, 0)
+Alpha (C) tried to move out of the map to (0, -1)
+Alpha (C) tried to fire out of bounds.
+Beta (D) looked around (3, 4)
+Beta (D) moved to (4, 3).
+Beta (D) tried to fire out of bounds.
+Star (E) looked around (0, 1)
+Star (E) moved to (1, 2).
+Star (E) tried to fire out of range.
+Respawn Queue: 
