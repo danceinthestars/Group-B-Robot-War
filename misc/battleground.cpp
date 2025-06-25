@@ -31,7 +31,7 @@ Battleground::Battleground(int rows, int cols, int maxSteps)
         grid[i].resize(cols);
         for (int j = 0; j < cols; ++j) 
         {
-            grid[i][j] = std::make_unique<Cell>(i, j);
+            grid[i][j] = std::make_unique<Cell>(i, j); // grid is a 2d vector of cell pointers
         }
     }
 }
@@ -99,8 +99,6 @@ void Battleground::addRobot(Robot* robot, int x, int y)
         robots.push_back(robot);
     }
 
-    // set else here if necessary to handle a case where the cell is occupied
-
 }
 
 
@@ -111,17 +109,17 @@ void Battleground::runGame(Logger& logger)
     for (currentStep = 1; currentStep <= maxSteps && robots.size() > 1; ++currentStep)
     {
 
-        respawnRobot();
+        respawnRobot();     // respawn a robot every turn
 
         for (Robot* robot : robots)
         {
-            robot->setHidden(false);
+            robot->setHidden(false);        // reset robot actions + powers
             robot->setMoved(false); 
-            robot->setFired(false); 
+            robot->setFired(false);    
             
             if (robot->isAlive())
             {
-                robot->executeAction(*this, actionLog);
+                robot->executeAction(*this, actionLog); // if robot is alive, it can take actions!
 
             };
             
@@ -148,7 +146,6 @@ void Battleground::runGame(Logger& logger)
         // Log to file
         logger.log(turnLog);
 
-        // Also print to console if you want
         for (const auto& msg : turnLog)
             std::cout << msg << std::endl;
 
@@ -212,6 +209,7 @@ void Battleground::respawnRobot()
     int x;
     int y;
 
+    // randomise coords until we find a cell that's empty
     do {
         x = Randomizer::generateRandom(0, getRows() - 1);
         y = Randomizer::generateRandom(0, getCols() - 1);
@@ -224,7 +222,7 @@ void Battleground::respawnRobot()
     
     grid[x][y]->placeRobot(respawnedRobot);
 
-    respawnedRobot->setShells(10); // REMEMBER TO ADD TO THIS ONCE YOU IMPLEMENT 30SHELLBOT
+    respawnedRobot->setShells(10);
 
     actionLog.push_back(respawnedRobot->getName() + " (" + respawnedRobot->getLetter() + ") has respawned at (" + std::to_string(x) + ", " + std::to_string(y) + ")!");
     

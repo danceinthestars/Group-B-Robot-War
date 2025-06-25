@@ -93,8 +93,8 @@ void MovingRobot::moveRobot(int newX, int newY, Battleground& field)
 {
     Cell* dest = field.getCell(newX, newY);
 
-    Cell* current = field.getCell(getXPos(), getYPos());
-    if (current) current->removeRobot();
+    Cell* current = field.getCell(getXPos(), getYPos()); 
+    if (current) current->removeRobot(); 
 
     dest->placeRobot(this);
 

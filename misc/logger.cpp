@@ -12,7 +12,7 @@ Phone: 018-2021399
 
 #include "logger.h"
 
-Logger::Logger(const std::string& filename) : ofs(filename, std::ios::out) 
+Logger::Logger(const std::string& filename) : ofs(filename, std::ios::out)
 {
 
 }

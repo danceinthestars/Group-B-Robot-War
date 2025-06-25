@@ -1,0 +1,355 @@
+
+Turn 1/35:
+# # # # # # #
+#       E   #
+#         D #
+#           #
+#   A C     #
+#           #
+# # # # # # #
+
+Kidd (A) looked around (0, 1).
+Kidd (A) moved to (1, 1).
+Kidd (A) tried to fire out of range.
+Jet (B) looked around (1, 4).
+Jet (B) moved to (2, 4).
+Jet (B) tried to fire out of range.
+Alpha (C) looked around (2, 1).
+Alpha (C) fired at (1, 1) and MISSED.
+Beta (D) looked around (4, 3).
+Beta (D) tried to move to (3, 4) but got blocked.
+Beta (D) fired at (3, 4) and MISSED.
+Star (E) looked around (3, 4).
+Star (E) fired at (2, 4) and HIT Jet (B)!
+Jet (B) died! Remaining lives: 2
+Star (E) chose the ScoutBot upgrade!
+Respawn Queue: Jet(B) 
+
+Turn 2/35:
+# # # # # # #
+#       E   #
+#           #
+#           #
+# B A C     #
+#           #
+# # # # # # #
+
+Jet (B) has respawned at (0, 1)!
+Kidd (A) looked around (1, 1).
+Kidd (A) fired at (0, 1) and MISSED.
+Jet (B) looked around (0, 1).
+Jet (B) fired at (1, 1) and MISSED.
+Alpha (C) looked around (2, 1).
+Alpha (C) fired at (1, 1) and MISSED.
+Beta (D) looked around (4, 3).
+Beta (D) tried to move to (3, 4) but got blocked.
+Beta (D) fired at (3, 4) and MISSED.
+Star (E) looked around (3, 4).
+Star (E) scouted the whole map!
+Star (E) tried to move to (4, 3) but got blocked.
+Star (E) fired at (4, 3) and HIT Beta (D)!
+Beta (D) died! Remaining lives: 2
+Star (E) chose the SemiAutoBot upgrade!
+Respawn Queue: Beta(D) 
+
+Turn 3/35:
+# # # # # # #
+#           #
+#       E   #
+#       D   #
+#           #
+#           #
+# # # # # # #
+
+Beta (D) has respawned at (3, 2)!
+Kidd (A) looked around (1, 1).
+Kidd (A) fired at (0, 1) and HIT Jet (B)!
+Jet (B) died! Remaining lives: 1
+Kidd (A) chose the CrushBot upgrade!
+Alpha (C) looked around (2, 1).
+Alpha (C) fired at (1, 1) and HIT Kidd (A)!
+Kidd (A) died! Remaining lives: 2
+Alpha (C) chose the LongShotBot upgrade!
+Beta (D) looked around (3, 2).
+Beta (D) tried to move to (2, 1) but got blocked.
+Beta (D) fired at (2, 1) and HIT Alpha (C)!
+Alpha (C) died! Remaining lives: 2
+Beta (D) chose the TrackBot upgrade!
+Star (E) looked around (3, 4).
+Star (E) scouted the whole map!
+Star (E) moved to (3, 3).
+Star (E) fired at (3, 1) and MISSED.
+Star (E) fired at (3, 1) but hit nothing.
+Star (E) fired at (3, 1) but hit nothing.
+Respawn Queue: Jet(B) Kidd(A) Alpha(C) 
+
+Turn 4/35:
+# # # # # # #
+#           #
+#       E   #
+#           #
+#       B   #
+#           #
+# # # # # # #
+
+Jet (B) has respawned at (2, 0)!
+Jet (B) looked around (2, 0).
+Jet (B) moved to (3, 1).
+Jet (B) tried to fire out of range.
+Beta (D) looked around (3, 2).
+Beta (D) planted a tracker on Jet (B)!
+Star (E) looked around (3, 3).
+Star (E) scouted the whole map!
+Star (E) fired at (3, 2) and HIT Beta (D)!
+Beta (D) died! Remaining lives: 1
+Star (E) chose the AccuracyBot upgrade!
+Star (E) fired at (3, 2) but hit nothing.
+Star (E) fired at (3, 2) but hit nothing.
+Respawn Queue: Kidd(A) Alpha(C) Beta(D) 
+
+Turn 5/35:
+# # # # # # #
+#           #
+#           #
+#       E   #
+#           #
+#           #
+# # # # # # #
+
+Kidd (A) has respawned at (4, 0)!
+Kidd (A) looked around (4, 0).
+Jet (B) died and is out of lives! It is out of the game!
+Kidd (A) chose the Heal One Life upgrade!
+Kidd (A) moved to (3, 1) and crushed an enemy!
+Kidd (A) moved to (3, 1).
+Kidd (A) fired at (2, 2) but hit nothing.
+Star (E) looked around (3, 3).
+Star (E) moved to (3, 2).
+Star (E) fired at (3, 0) but hit nothing.
+Star (E) looked around (3, 2).
+Star (E) fired at (3, 1) and HIT Kidd (A)!
+Kidd (A) died! Remaining lives: 2
+Star (E) chose the JumpBot upgrade!
+Respawn Queue: Alpha(C) Beta(D) Kidd(A) 
+
+Turn 6/35:
+# # # # # # #
+#           #
+#           #
+#   C   E   #
+#           #
+#           #
+# # # # # # #
+
+Alpha (C) has respawned at (1, 2)!
+Alpha (C) looked around (1, 2).
+Alpha (C) fired at (3, 2) and MISSED.
+Star (E) looked around (3, 2).
+Star (E) tried to move to (1, 2) but got blocked.
+Respawn Queue: Beta(D) Kidd(A) 
+
+Turn 7/35:
+# # # # # # #
+#           #
+#   D       #
+#   C   E   #
+#           #
+#           #
+# # # # # # #
+
+Beta (D) has respawned at (1, 3)!
+Alpha (C) looked around (1, 2).
+Alpha (C) fired at (1, 3) and MISSED.
+Beta (D) looked around (1, 3).
+Beta (D) planted a tracker on Alpha (C)!
+Star (E) looked around (3, 2).
+Star (E) tried to move to (1, 2) but got blocked.
+Respawn Queue: Kidd(A) 
+
+Turn 8/35:
+# # # # # # #
+#           #
+#   D       #
+#   C   E   #
+#           #
+#           #
+# # # # # # #
+
+Kidd (A) has respawned at (0, 0)!
+Kidd (A) looked around (0, 0).
+Kidd (A) moved to (1, 1).
+Kidd (A) tried to fire out of range.
+Alpha (C) looked around (1, 2).
+Alpha (C) fired at (1, 1) and HIT Kidd (A)!
+Kidd (A) died! Remaining lives: 1
+Alpha (C) chose the TrackBot upgrade!
+Beta (D) looked around (1, 3).
+Beta (D) planted a tracker on Alpha (C)!
+Star (E) looked around (3, 2).
+Star (E) tried to move to (1, 2) but got blocked.
+Respawn Queue: Kidd(A) 
+
+Turn 9/35:
+# # # # # # #
+#           #
+#   D       #
+#   C   A   #
+#           #
+#           #
+# # # # # # #
+
+Kidd (A) has respawned at (3, 1)!
+Kidd (A) looked around (3, 1).
+Star (E) died! Remaining lives: 2
+Kidd (A) chose the TrackBot upgrade!
+Kidd (A) moved to (3, 2) and crushed an enemy!
+Kidd (A) moved to (3, 2).
+Alpha (C) looked around (1, 2).
+Alpha (C) planted a tracker on Beta (D)!
+Beta (D) looked around (1, 3).
+Beta (D) fired at (1, 2) and MISSED.
+Respawn Queue: Star(E) 
+
+Turn 10/35:
+# # # # # # #
+#           #
+#   D       #
+#     E A   #
+#           #
+#           #
+# # # # # # #
+
+Star (E) has respawned at (4, 4)!
+Kidd (A) looked around (3, 2).
+Kidd (A) planted a tracker on Alpha (C)!
+Alpha (C) looked around (1, 2).
+Alpha (C) planted a tracker on Beta (D)!
+Beta (D) looked around (1, 3).
+Beta (D) fired at (1, 2) and HIT Alpha (C)!
+Alpha (C) died! Remaining lives: 1
+Beta (D) chose the Heal One Life upgrade!
+Star (E) looked around (4, 4).
+Star (E) jumped to (2, 2)!
+Respawn Queue: Alpha(C) 
+
+Turn 11/35:
+# # # # # # #
+#           #
+#   D       #
+#       A   #
+# C         #
+#           #
+# # # # # # #
+
+Alpha (C) has respawned at (0, 1)!
+Kidd (A) looked around (3, 2).
+Kidd (A) planted a tracker on Star (E)!
+Alpha (C) looked around (0, 1).
+Alpha (C) planted a tracker on Beta (D)!
+Beta (D) looked around (1, 3).
+Beta (D) tried to move to (2, 2) but got blocked.
+Beta (D) fired at (2, 2) and HIT Star (E)!
+Star (E) died! Remaining lives: 1
+Beta (D) chose the JumpBot upgrade!
+Respawn Queue: Star(E) 
+
+Turn 12/35:
+# # # # # # #
+#           #
+#           #
+#     E A   #
+# C     D   #
+#           #
+# # # # # # #
+
+Star (E) has respawned at (4, 4)!
+Kidd (A) looked around (3, 2).
+Kidd (A) planted a tracker on Beta (D)!
+Alpha (C) looked around (0, 1).
+Alpha (C) fired at (1, 3) and MISSED.
+Beta (D) looked around (1, 3).
+Beta (D) jumped to (3, 1)!
+Star (E) looked around (4, 4).
+Star (E) jumped to (2, 2)!
+Respawn Queue: 
+
+Turn 13/35:
+# # # # # # #
+#           #
+#           #
+#           #
+#           #
+# E         #
+# # # # # # #
+
+Kidd (A) looked around (3, 2).
+Beta (D) died! Remaining lives: 1
+Kidd (A) chose the LongShotBot upgrade!
+Kidd (A) moved to (3, 1) and crushed an enemy!
+Kidd (A) moved to (3, 1).
+Alpha (C) looked around (0, 1).
+Alpha (C) fired at (3, 1) and HIT Kidd (A)!
+Kidd (A) died and is out of lives! It is out of the game!
+Alpha (C) chose the Heal One Life upgrade!
+Star (E) looked around (2, 2).
+Star (E) jumped to (0, 0)!
+Star (E) looked around (0, 0).
+Star (E) fired at (0, 1) and HIT Alpha (C)!
+Alpha (C) died! Remaining lives: 1
+Star (E) chose the Heal One Life upgrade!
+Respawn Queue: Beta(D) Alpha(C) 
+
+Turn 14/35:
+# # # # # # #
+#           #
+#           #
+#   D       #
+#   E       #
+#           #
+# # # # # # #
+
+Beta (D) has respawned at (3, 4)!
+Beta (D) looked around (3, 4).
+Beta (D) jumped to (1, 2)!
+Star (E) looked around (0, 0).
+Star (E) moved to (1, 1).
+Star (E) tried to fire out of range.
+Respawn Queue: Alpha(C) 
+
+Turn 15/35:
+# # # # # # #
+#   C       #
+#   E       #
+#           #
+#           #
+#           #
+# # # # # # #
+
+Alpha (C) has respawned at (1, 4)!
+Alpha (C) looked around (1, 4).
+Alpha (C) fired at (1, 2) and HIT Beta (D)!
+Beta (D) died and is out of lives! It is out of the game!
+Alpha (C) chose the JumpBot upgrade!
+Star (E) looked around (1, 1).
+Star (E) moved to (1, 2).
+Star (E) tried to fire out of bounds.
+Star (E) looked around (1, 2).
+Star (E) moved to (1, 3).
+Star (E) tried to fire out of bounds.
+Respawn Queue: 
+
+Turn 16/35:
+# # # # # # #
+#           #
+#   E       #
+#           #
+#           #
+#           #
+# # # # # # #
+
+Alpha (C) looked around (1, 4).
+Alpha (C) fired at (1, 3) and MISSED.
+Star (E) looked around (1, 3).
+Star (E) fired at (1, 4) and HIT Alpha (C)!
+Alpha (C) died and is out of lives! It is out of the game!
+Respawn Queue: 
